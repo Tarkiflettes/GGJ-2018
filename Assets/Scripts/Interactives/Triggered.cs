@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class Triggered : MonoBehaviour
+namespace Assets.Scripts.Interactives
 {
+    public abstract class Triggered : MonoBehaviour
+    {
 
-    public abstract void Action();
+        public abstract void Action();
 
+    }
 }
