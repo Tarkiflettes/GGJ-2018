@@ -5,6 +5,7 @@ using UnityEngine;
 public class RayCaster : MonoBehaviour {
 
     private Collider _previousCollider;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -21,10 +22,13 @@ public class RayCaster : MonoBehaviour {
             if(_previousCollider != currentCollider)
             {
                 currentCollider.SendMessage("OnRayEnter", SendMessageOptions.DontRequireReceiver);
+                _previousCollider.SendMessage("OnRayExit", SendMessageOptions.DontRequireReceiver);
             }
 
-
-                _previousCollider = hit.collider;
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+            }
         }
 	}
 
