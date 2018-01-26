@@ -1,29 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
-public class Trigger : RayReceiver
+namespace Assets.Scripts.Interactives
 {
-    public List<Triggered> TriggeredList;
-
-    void Action()
+    public abstract class Trigger : RayReceiver
     {
-        foreach (var t in TriggeredList)
+        public List<Triggered> TriggeredList;
+
+        void Triggering()
         {
-            t.Action();
+            foreach (var t in TriggeredList)
+            {
+                t.Action();
+            }
         }
-    }
 
-    protected override void OnRayEnter()
-    {
-    }
+        protected abstract void Action();
 
-    protected override void OnRaySelect()
-    {
-        Action();
-    }
+        protected override void OnRayEnter()
+        {
+        }
 
-    protected override void OnRayExit()
-    {
+        protected override void OnRaySelect()
+        {
+            Triggering();
+            Action();
+        }
+
+        protected override void OnRayExit()
+        {
+        }
     }
 }
