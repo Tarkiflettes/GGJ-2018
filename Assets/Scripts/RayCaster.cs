@@ -19,13 +19,18 @@ public class RayCaster : MonoBehaviour {
         {
             Collider currentCollider = hit.collider;
 
-            if(_previousCollider != currentCollider)
+            Debug.Log("sdrfdf");
+            if (_previousCollider != currentCollider)
             {
+                Debug.Log("Different");
                 currentCollider.SendMessage("OnRayEnter", SendMessageOptions.DontRequireReceiver);
-                _previousCollider.SendMessage("OnRayExit", SendMessageOptions.DontRequireReceiver);
+                if(_previousCollider != null)
+                {
+                    _previousCollider.SendMessage("OnRayExit", SendMessageOptions.DontRequireReceiver);
+                }
             }
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKeyDown(KeyCode.F))
             {
                 currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
             }
