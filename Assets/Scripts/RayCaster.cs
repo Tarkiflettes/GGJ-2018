@@ -30,7 +30,7 @@ public class RayCaster : MonoBehaviour {
                 }
             }
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKeyDown(KeyCode.F))
             {
                 currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
             }
