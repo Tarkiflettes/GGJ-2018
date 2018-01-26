@@ -2,14 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trigger : MonoBehaviour
+public class Trigger : RayReceiver
 {
     public List<Triggered> TriggeredList;
-    
-    void Start()
-    {
-        TriggeredList = new List<Triggered>();
-    }
 
     void Action()
     {
@@ -19,4 +14,16 @@ public class Trigger : MonoBehaviour
         }
     }
 
+    protected override void OnRayEnter()
+    {
+    }
+
+    protected override void OnRaySelect()
+    {
+        Action();
+    }
+
+    protected override void OnRayExit()
+    {
+    }
 }
