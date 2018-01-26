@@ -6,7 +6,7 @@ namespace Assets.Scripts.Interactives
     {
         public List<Triggered> TriggeredList;
 
-        void Triggering()
+        private void Triggering()
         {
             foreach (var t in TriggeredList)
             {
