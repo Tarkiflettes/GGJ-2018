@@ -28,6 +28,7 @@ public abstract class Trigger : RayReceiver
 
     protected override void OnRaySelect()
     {
+        Debug.Log("OnRaySelect");
         if (!CanTrigger())
             return;
         OpenTrigger();
