@@ -60,7 +60,7 @@ public class RayCaster : MonoBehaviour
         }
         if (collider.gameObject.GetComponent<LockScreenAction>())
         {
-            Player.LockScreen(collider.gameObject);
+            Player.LockScreen(collider.gameObject.GetComponent<LockScreenAction>());
         }
 
     }

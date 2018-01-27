@@ -6,14 +6,20 @@ public class LockScreenAction : RayReceiver
     public MeshCollider MajorCollider;
     public List<MeshCollider> Colliders;
 
+    //public Transform TransformOrigin { get { return _transformOrigin; } }
+    public Vector3 _positionOrigin;
+    public Quaternion _rotationOrigin;
+
     private bool ScreenLocked = false;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-
+        _positionOrigin = transform.position;
+        _rotationOrigin = transform.rotation;
+        Debug.Log(transform.position);
     }
 
+    //Overrides
     protected override void OnRayEnter()
     {
         Debug.Log("OnEnter");
