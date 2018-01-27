@@ -58,6 +58,8 @@ public class RayCaster : MonoBehaviour
 
     protected virtual void OnSelect(GameObject gameObject)
     {
+
+        Debug.Log(gameObject);
         if (gameObject.GetComponent<Movable>())
         {
             Player.GrabObject(gameObject);

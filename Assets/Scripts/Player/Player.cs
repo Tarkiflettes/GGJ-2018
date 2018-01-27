@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
             var picked = Inventory.AddPickable(gameObject.GetComponent<Pickable>());
             if (picked)
             {
-                gameObject.GetComponent<BoxCollider>().enabled = false;
+                gameObject.GetComponent<Collider>().enabled = false;
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
                 // TODO pas de destroy a cause du pickable, changer les 2 lignes au dessus ?
             }
