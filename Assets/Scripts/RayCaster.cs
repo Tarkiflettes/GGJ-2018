@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class RayCaster : MonoBehaviour {
 
+    public Player Player;
+
     private Collider _previousCollider;
+
+    private const float MAX_RAY_DISTANCE = 2.5f;
 
 	// Use this for initialization
 	void Start () {
@@ -15,31 +19,44 @@ public class RayCaster : MonoBehaviour {
 	void Update () {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 20, LayerMask.GetMask("RayReceiver")))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, MAX_RAY_DISTANCE, LayerMask.GetMask("RayReceiver")))
         {
             Collider currentCollider = hit.collider;
 
-            Debug.Log("sdrfdf");
             if (_previousCollider != currentCollider)
             {
-                Debug.Log("Different");
                 currentCollider.SendMessage("OnRayEnter", SendMessageOptions.DontRequireReceiver);
-                if(_previousCollider != null)
-                {
-                    _previousCollider.SendMessage("OnRayExit", SendMessageOptions.DontRequireReceiver);
-                }
+               
+                _previousCollider = currentCollider;
             }
 
             if(Input.GetKeyDown(KeyCode.F))
             {
                 currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+                OnSelect(currentCollider);
+            }
+        }
+        else
+        {
+            if (_previousCollider != null)
+            {
+                _previousCollider.SendMessage("OnRayExit", SendMessageOptions.DontRequireReceiver);
+                _previousCollider = null;
             }
         }
 	}
 
+    protected virtual void OnSelect(Collider collider)
+    {
+        if(collider.gameObject.GetComponent<Movable>())
+        {
+            Player.GrabObject(collider.gameObject);
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
-        Gizmos.DrawRay(transform.position, transform.forward * 5f);
+        Gizmos.DrawRay(transform.position, transform.forward * MAX_RAY_DISTANCE);
     }
 }
