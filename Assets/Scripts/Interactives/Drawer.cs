@@ -1,19 +1,23 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Drawer : Triggered
+public class Drawer : Trigger
 {
 
     public bool Closed = true;
-    public int Length = 50;
+    public int Distance = 35;
+    public Vector3 Axis;
 
     private int _closed = 1;
     private bool _busy = false;
+    
 
-    public override void Action()
+    protected override void Action()
     {
-        if (_busy) return;
-
+        if (_busy)
+        {
+            return;
+        }
         _busy = true;
         var openClose = OpenClose();
         StartCoroutine(openClose);
@@ -23,11 +27,12 @@ public class Drawer : Triggered
     {
         _closed = 1;
         if (Closed)
-            _closed = -1;
-
-        for (var i = 0; i < 90; i++)
         {
-            transform.Rotate(Vector3.forward, _closed);
+            _closed = -1;
+        }
+        for (var i = 0; i < Distance; i++)
+        {
+            transform.Translate(Axis * Time.deltaTime * _closed, Space.World);
             yield return new WaitForSeconds(0.01f);
         }
 

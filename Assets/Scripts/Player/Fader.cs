@@ -17,7 +17,6 @@ public class Fader : MonoBehaviour {
     public void Fade(float fadeIntensity)
     {
         _fadeIntensity = fadeIntensity/255f;
-        //Debug.Log("-------------" + _fadeIntensity);
         if (_color.a < fadeIntensity)
         {
             StartCoroutine(FadeIn());
@@ -29,7 +28,6 @@ public class Fader : MonoBehaviour {
 
     private void FadeColor(float sens)
     {
-       // Debug.Log(_fadeIntensity + " Fade " + _color.a);
         _color.a += sens * (1f / 255f) * Speed;
         GetComponent<Renderer>().material.color = _color;
         

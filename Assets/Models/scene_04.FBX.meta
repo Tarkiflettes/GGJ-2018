@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: a19586e0422d0e04593cfc2edbdec8fb
+timeCreated: 1517078960
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: obbj_rune_table
+    100002: obbj_rune_table_button
+    100004: obbj_rune_table_trap
+    100006: obj_base_ceiling001
+    100008: obj_base_door001
+    100010: obj_base_floor001
+    100012: obj_base_walls001
+    100014: obj_fireplace
+    100016: obj_fireplace_logs
+    100018: obj_fireplace_trap_door
+    100020: obj_switch_arm
+    100022: obj_switch_base
+    100024: obj_wall_light
+    100026: obj_wall_light001
+    100028: obj_wall_light002
+    100030: obj_wall_light003
+    100032: Object002
+    100034: Plane001
+    100036: //RootNode
+    400000: obbj_rune_table
+    400002: obbj_rune_table_button
+    400004: obbj_rune_table_trap
+    400006: obj_base_ceiling001
+    400008: obj_base_door001
+    400010: obj_base_floor001
+    400012: obj_base_walls001
+    400014: obj_fireplace
+    400016: obj_fireplace_logs
+    400018: obj_fireplace_trap_door
+    400020: obj_switch_arm
+    400022: obj_switch_base
+    400024: obj_wall_light
+    400026: obj_wall_light001
+    400028: obj_wall_light002
+    400030: obj_wall_light003
+    400032: Object002
+    400034: Plane001
+    400036: //RootNode
+    2100000: 'Material #198'
+    2100002: 'Material #206'
+    2100004: m_gray
+    2100006: 'Material #184'
+    2100008: 'Material #185'
+    2100010: 'Material #208'
+    2100012: m_noir
+    2100014: 'Material #207'
+    2100016: m_white
+    2300000: obbj_rune_table
+    2300002: obbj_rune_table_button
+    2300004: obbj_rune_table_trap
+    2300006: obj_base_ceiling001
+    2300008: obj_base_door001
+    2300010: obj_base_floor001
+    2300012: obj_base_walls001
+    2300014: obj_fireplace
+    2300016: obj_fireplace_logs
+    2300018: obj_fireplace_trap_door
+    2300020: obj_switch_arm
+    2300022: obj_switch_base
+    2300024: obj_wall_light
+    2300026: obj_wall_light001
+    2300028: obj_wall_light002
+    2300030: obj_wall_light003
+    2300032: Plane001
+    3300000: obbj_rune_table
+    3300002: obbj_rune_table_button
+    3300004: obbj_rune_table_trap
+    3300006: obj_base_ceiling001
+    3300008: obj_base_door001
+    3300010: obj_base_floor001
+    3300012: obj_base_walls001
+    3300014: obj_fireplace
+    3300016: obj_fireplace_logs
+    3300018: obj_fireplace_trap_door
+    3300020: obj_switch_arm
+    3300022: obj_switch_base
+    3300024: obj_wall_light
+    3300026: obj_wall_light001
+    3300028: obj_wall_light002
+    3300030: obj_wall_light003
+    3300032: Plane001
+    4300000: obj_wall_light
+    4300002: obj_fireplace
+    4300004: obj_fireplace_trap_door
+    4300006: obj_fireplace_logs
+    4300008: obbj_rune_table
+    4300010: obbj_rune_table_button
+    4300012: obbj_rune_table_trap
+    4300014: Plane001
+    4300016: obj_wall_light001
+    4300018: obj_wall_light003
+    4300020: obj_wall_light002
+    4300022: obj_base_walls001
+    4300024: obj_base_door001
+    4300026: obj_base_floor001
+    4300028: obj_base_ceiling001
+    4300030: obj_switch_base
+    4300032: obj_switch_arm
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #184'
+    second: {fileID: 2100000, guid: d30afbe84c521c047a2f08c4ca8a77b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #185'
+    second: {fileID: 2100000, guid: 59a6c0059aec746499833c4018b20f7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #198'
+    second: {fileID: 2100000, guid: 2efb4b932c808c645a856954471eb594, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #206'
+    second: {fileID: 2100000, guid: cf25edcbbf7f21d419ad86a2c5148b13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #207'
+    second: {fileID: 2100000, guid: 27a9cca95fa307c468df09dbefe1c99b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #208'
+    second: {fileID: 2100000, guid: db871bc3282fe294c8b85208ff3900f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_gray
+    second: {fileID: 2100000, guid: 2e2b823344deae34789c4a5547489fc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_noir
+    second: {fileID: 2100000, guid: 22ef610b51eee7049bb07b97b14b961e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_white
+    second: {fileID: 2100000, guid: 435e4faa92533464bbca186d62c77d91, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

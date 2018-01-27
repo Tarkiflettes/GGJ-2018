@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CryptexCylinder : MonoBehaviour {
 
-	
-
     [ContextMenu("Rotate")]
     void NextStepD()
     {

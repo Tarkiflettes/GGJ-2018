@@ -201,12 +201,82 @@ ModelImporter:
     4300062: obj_chest_bottom
     4300064: obj_lock_base
     4300066: obj_lock_hinge
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #159'
+    second: {fileID: 2100000, guid: b4b9fd9993fe1ee45a1a0ea5d89173f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #39 Slot #3'
+    second: {fileID: 2100000, guid: 8a33c03849d8d5d40aae6120c355ecdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #39 Slot #4'
+    second: {fileID: 2100000, guid: b16c777656cac28458d6210ec407f1ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #39 Slot #5'
+    second: {fileID: 2100000, guid: 8e58c572d3f2e0d49883818f16aeb904, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #39 Slot #6'
+    second: {fileID: 2100000, guid: b615435266ebad04fb5da08e77ad6011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 392cb53d226abb245b62a3a10ec417be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_book_inside
+    second: {fileID: 2100000, guid: c60f7b87b8b8435498149d853aea7908, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_book_pages
+    second: {fileID: 2100000, guid: e61d73b57401f30448650b4021322672, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_frame
+    second: {fileID: 2100000, guid: 3166a2dd523b84f42aa04c5fd0990d96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_gray
+    second: {fileID: 2100000, guid: 2e2b823344deae34789c4a5547489fc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_noir
+    second: {fileID: 2100000, guid: 22ef610b51eee7049bb07b97b14b961e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_rune
+    second: {fileID: 2100000, guid: 2bc6e0c97310e1e4480a6c3774f3acb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_white
+    second: {fileID: 2100000, guid: 435e4faa92533464bbca186d62c77d91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood
+    second: {fileID: 2100000, guid: 87e9a75228eaf3f4f86eb2cabd4ed84c, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
