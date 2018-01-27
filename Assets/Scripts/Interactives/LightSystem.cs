@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class LightSystem : Trigger
+public class LightSystem : Triggered
 {
-
-    protected override void Action()
+    
+    public override void Action()
     {
         StartCoroutine(ChangeColor());
     }

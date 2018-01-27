@@ -4,6 +4,7 @@ using UnityEngine;
 public class Switch : Trigger
 {
     private bool _busy = false;
+    private bool on = false;
 
     private IEnumerator ContinuousRotation(Vector3 vector)
     {
@@ -19,7 +20,9 @@ public class Switch : Trigger
     {
         var vector = Vector3.forward;
 
-        if (transform.rotation == Quaternion.Euler(0, 0, 45))
+        Debug.Log(transform.rotation);
+
+        if (on)
         {
             vector = Vector3.back;
         }
@@ -27,6 +30,7 @@ public class Switch : Trigger
         if (!_busy)
         {
             _busy = true;
+            on = !on;
             var continuousRotation = ContinuousRotation(vector);
             StartCoroutine(continuousRotation);
         }
