@@ -23,8 +23,7 @@ namespace Assets.Scripts.Interactives
             var ol = GetComponent<Outline>();
             if (ol != null)
             {
-                ol.eraseRenderer = true;
-                Debug.Log("koukou 1");
+                ol.eraseRenderer = false;
             }
         }
 
@@ -39,8 +38,7 @@ namespace Assets.Scripts.Interactives
             var ol = GetComponent<Outline>();
             if (ol != null)
             {
-                ol.eraseRenderer = false;
-                Debug.Log("koukou 2");
+                ol.eraseRenderer = true;
             }
         }
     }
