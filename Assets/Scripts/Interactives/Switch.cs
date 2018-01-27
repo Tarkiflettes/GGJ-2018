@@ -30,8 +30,7 @@ public class Switch : Trigger
             busy = true;
             var continuousRotation = ContinuousRotation(vector);
             StartCoroutine(continuousRotation);
-        }
-        
+        }   
     }
 
 }
