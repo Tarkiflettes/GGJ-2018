@@ -2,62 +2,75 @@
 using cakeslice;
 using UnityEngine;
 
-namespace Assets.Scripts.Interactives
+public abstract class Trigger : RayReceiver
 {
-    public abstract class Trigger : RayReceiver
+    public List<Triggered> TriggeredList;
+    public List<Pickable> RequiredToTrigger;
+
+    protected void Triggering()
     {
-        public List<Triggered> TriggeredList;
-        public List<Pickable> RequiredToTrigger;
-
-        protected void Triggering()
+        foreach (var t in TriggeredList)
         {
-            foreach (var t in TriggeredList)
+            t.Action();
+        }
+    }
+
+    protected abstract void Action();
+
+    protected override void OnRayEnter()
+    {
+        var ol = GetComponent<Outline>();
+        if (ol != null)
+        {
+            ol.eraseRenderer = false;
+        }
+    }
+
+    protected override void OnRaySelect()
+    {
+        if (!CanTrigger())
+            return;
+        OpenTrigger();
+        Triggering();
+        Action();
+    }
+
+    protected override void OnRayExit()
+    {
+        var ol = GetComponent<Outline>();
+        if (ol != null)
+        {
+            ol.eraseRenderer = true;
+        }
+    }
+
+    // clear keys in the inventory that matches with RequiredToTrigger
+    private void OpenTrigger()
+    {
+        var players = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var player in players)
+        {
+            var p = player.GetComponent<Player>();
+            foreach (var r in RequiredToTrigger)
             {
-                t.Action();
+                p.Inventory.RemovePickable(r);
             }
         }
+        RequiredToTrigger.Clear();
+    }
 
-        protected abstract void Action();
-
-        protected override void OnRayEnter()
+    private bool CanTrigger()
+    {
+        var players = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var player in players)
         {
-            var ol = GetComponent<Outline>();
-            if (ol != null)
+            var p = player.GetComponent<Player>();
+            foreach (var r in RequiredToTrigger)
             {
-                ol.eraseRenderer = false;
+                if (!p.Inventory.Contains(r))
+                    return false;
             }
         }
-
-        protected override void OnRaySelect()
-        {
-            if (!CanBeTrigger())
-                return;
-            Triggering();
-            Action();
-        }
-
-        protected override void OnRayExit()
-        {
-            var ol = GetComponent<Outline>();
-            if (ol != null)
-            {
-                ol.eraseRenderer = true;
-            }
-        }
-
-        private bool CanBeTrigger()
-        {
-            var players = GameObject.FindGameObjectsWithTag("Payer");
-            foreach (var player in players)
-            {
-                var p = player.GetComponent<Player>();
-                foreach (var r in RequiredToTrigger)
-                {
-                    if (!p.Inventory.Pickables.Contains(r))
-                        return false;
-                }
-            }
-            return true;
-        }
+        return true;
     }
 }

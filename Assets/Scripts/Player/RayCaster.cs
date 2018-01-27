@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class RayCaster : MonoBehaviour {
+public class RayCaster : MonoBehaviour
+{
 
     public Player Player;
 
@@ -10,13 +9,15 @@ public class RayCaster : MonoBehaviour {
 
     private const float MAX_RAY_DISTANCE = 2.5f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, MAX_RAY_DISTANCE, LayerMask.GetMask("RayReceiver")))
@@ -26,11 +27,11 @@ public class RayCaster : MonoBehaviour {
             if (_previousCollider != currentCollider)
             {
                 currentCollider.SendMessage("OnRayEnter", SendMessageOptions.DontRequireReceiver);
-               
+
                 _previousCollider = currentCollider;
             }
 
-            if(Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
                 OnSelect(currentCollider);
@@ -44,15 +45,18 @@ public class RayCaster : MonoBehaviour {
                 _previousCollider = null;
             }
         }
-	}
+    }
 
     protected virtual void OnSelect(Collider collider)
     {
-        if(collider.gameObject.GetComponent<Movable>())
+        if (collider.gameObject.GetComponent<Movable>())
         {
             Player.GrabObject(collider.gameObject);
         }
-        //To - Do
+        if (collider.gameObject.GetComponent<Pickable>())
+        {
+            Player.PickObject(collider.gameObject);
+        }
     }
 
     private void OnDrawGizmos()

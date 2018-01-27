@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Pickable : MonoBehaviour
 {
 
-    public Image Image;
+    public Sprite Image;
     public string Name;
-
+    
 }
