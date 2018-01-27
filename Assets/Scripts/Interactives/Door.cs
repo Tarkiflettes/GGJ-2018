@@ -38,7 +38,7 @@ public class Door : MonoBehaviour, Triggered
         _busy = false;
     }
 
-    public override void Action()
+    public void Action()
     {
         if (_busy) return;
 
