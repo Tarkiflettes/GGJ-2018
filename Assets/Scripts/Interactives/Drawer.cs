@@ -1,11 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Drawer : Triggered
 {
 
     public bool Closed = true;
+    public int Length = 50;
 
     private int _closed = 1;
     private bool _busy = false;

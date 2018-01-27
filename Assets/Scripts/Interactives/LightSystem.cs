@@ -6,7 +6,6 @@ public class LightSystem : Trigger
 
     protected override void Action()
     {
-        Debug.Log("oui");
         StartCoroutine(ChangeColor());
     }
 

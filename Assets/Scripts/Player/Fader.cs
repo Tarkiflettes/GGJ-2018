@@ -17,7 +17,7 @@ public class Fader : MonoBehaviour {
     public void Fade(float fadeIntensity)
     {
         _fadeIntensity = fadeIntensity/255f;
-        Debug.Log("-------------" + _fadeIntensity);
+        //Debug.Log("-------------" + _fadeIntensity);
         if (_color.a < fadeIntensity)
         {
             StartCoroutine(FadeIn());
@@ -27,9 +27,9 @@ public class Fader : MonoBehaviour {
         }
     }
 
-    private void FadeColor(int sens)
+    private void FadeColor(float sens)
     {
-        Debug.Log(_fadeIntensity + " Fade " + _color.a);
+       // Debug.Log(_fadeIntensity + " Fade " + _color.a);
         _color.a += sens * (1f / 255f) * Speed;
         GetComponent<Renderer>().material.color = _color;
         
@@ -40,7 +40,7 @@ public class Fader : MonoBehaviour {
         _fadeIn = true;
         while (_color.a < _fadeIntensity && _fadeIn)
         {
-            FadeColor(1);
+            FadeColor(0.5f);
             yield return new WaitForSeconds(0.01f);
         }
     }
