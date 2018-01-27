@@ -2,12 +2,20 @@
 
 public class Player : MonoBehaviour
 {
-
     public Transform HoldPoint;
     public Inventory Inventory;
+    public FPController FPController;
+    public Fader Fader;
+
     private GameObject _objectHeld;
     private Rigidbody _objectHeldRb;
     private Transform _objectHeldOldParent;
+    private bool _screenLocked;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     // Update is called once per frame
     void Update()
@@ -17,6 +25,25 @@ public class Player : MonoBehaviour
             _objectHeld.transform.position = HoldPoint.position;
             _objectHeld.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
+    }
+
+    // Methode pour les objets qui s'affichent devant le jouer et qui unlock le curseur
+    public void LockScreen(GameObject gameObject)
+    {
+        if(!_screenLocked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            FPController.enabled = false;
+            //Fade in de la boule autour de la tête
+            Fader.Fade(191);
+        } else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            FPController.enabled = true;
+            //Fade out de la boule autour de la tête
+            Fader.Fade(0);
+        }
+        _screenLocked = !_screenLocked;
     }
 
     public void GrabObject(GameObject gameObject)
