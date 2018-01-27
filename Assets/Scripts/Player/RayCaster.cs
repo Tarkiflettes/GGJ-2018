@@ -58,6 +58,11 @@ public class RayCaster : MonoBehaviour
             Debug.Log(collider.gameObject);
             Player.PickObject(collider.gameObject);
         }
+        if (collider.gameObject.GetComponent<LockScreenAction>())
+        {
+            Player.LockScreen(collider.gameObject);
+        }
+
     }
 
     private void OnDrawGizmos()

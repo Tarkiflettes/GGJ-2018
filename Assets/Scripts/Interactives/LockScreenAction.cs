@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class LockScreenAction : RayReceiver
 {
-
     public MeshCollider MajorCollider;
     public List<MeshCollider> Colliders;
 
@@ -28,6 +27,9 @@ public class LockScreenAction : RayReceiver
     protected override void OnRaySelect()
     {
         Debug.Log("OnSelect");
+
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        
         //MajorCollider.enabled = ScreenLocked;
         foreach (Collider col in Colliders)
         {
