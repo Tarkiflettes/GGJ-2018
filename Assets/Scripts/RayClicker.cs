@@ -16,12 +16,24 @@ public class RayClicker : MonoBehaviour {
             {
                 if (hitInfo.collider.gameObject.GetComponent<CryptexCylinder>())
                 {
-                    hitInfo.collider.SendMessage("NextStep", SendMessageOptions.DontRequireReceiver);
+                    hitInfo.collider.SendMessage("NextStepG", SendMessageOptions.DontRequireReceiver);
                 }
                 else if (hitInfo.collider.gameObject.GetComponent<Lock>())
                 {
-                    Debug.Log("Lock");
                     hitInfo.collider.SendMessage("OnSelect", SendMessageOptions.DontRequireReceiver);
+                }
+            }
+        }
+        else if (Input.GetButtonDown("Fire2"))
+        {
+            RaycastHit hitInfo = new RaycastHit();
+            bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
+
+            if (hit)
+            {
+                if (hitInfo.collider.gameObject.GetComponent<CryptexCylinder>())
+                {
+                    hitInfo.collider.SendMessage("NextStepD", SendMessageOptions.DontRequireReceiver);
                 }
             }
         }

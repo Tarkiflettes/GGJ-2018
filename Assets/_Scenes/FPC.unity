@@ -1802,6 +1802,25 @@ Transform:
   m_PrefabParentObject: {fileID: 4655493504025758, guid: 661cfef60b044c849b1e0696bd94b3e3,
     type: 2}
   m_PrefabInternal: {fileID: 1894709160}
+--- !u!1 &1476727943 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1488054947128656, guid: 661cfef60b044c849b1e0696bd94b3e3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1894709160}
+--- !u!114 &1476727949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1476727943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca1496f959ff414ba47e87a0206114b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggeredList:
+  - {fileID: 322198800}
+  RequiredToTrigger: []
 --- !u!1 &1805461961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,7 +2115,13 @@ Prefab:
       propertyPath: m_TagString
       value: Rotator
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114602235147302964, guid: 661cfef60b044c849b1e0696bd94b3e3,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114602235147302964, guid: 661cfef60b044c849b1e0696bd94b3e3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 661cfef60b044c849b1e0696bd94b3e3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1899898792
@@ -2348,11 +2373,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2060400366}
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.997318, y: 0.24435297, z: -3.28}
+  m_LocalRotation: {x: -0.5000002, y: 0.49999988, z: 0.49999988, w: 0.5000002}
+  m_LocalPosition: {x: 4.76, y: 0.24435297, z: 4.4}
   m_LocalScale: {x: 0.41359887, y: 0.41359916, z: 0.41359884}
   m_Children:
   - {fileID: 1129900450}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -90, y: -180, z: 90}
+  m_LocalEulerAnglesHint: {x: -89.99999, y: -180, z: 270}
