@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using cakeslice;
+using UnityEngine;
 
 namespace Assets.Scripts.Interactives
 {
@@ -6,7 +8,7 @@ namespace Assets.Scripts.Interactives
     {
         public List<Triggered> TriggeredList;
 
-        private void Triggering()
+        protected void Triggering()
         {
             foreach (var t in TriggeredList)
             {
@@ -18,6 +20,12 @@ namespace Assets.Scripts.Interactives
 
         protected override void OnRayEnter()
         {
+            var ol = GetComponent<Outline>();
+            if (ol != null)
+            {
+                ol.eraseRenderer = true;
+                Debug.Log("koukou 1");
+            }
         }
 
         protected override void OnRaySelect()
@@ -28,6 +36,12 @@ namespace Assets.Scripts.Interactives
 
         protected override void OnRayExit()
         {
+            var ol = GetComponent<Outline>();
+            if (ol != null)
+            {
+                ol.eraseRenderer = false;
+                Debug.Log("koukou 2");
+            }
         }
     }
 }
