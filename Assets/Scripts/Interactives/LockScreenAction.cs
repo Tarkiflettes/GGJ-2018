@@ -34,8 +34,6 @@ public class LockScreenAction : RayReceiver
     protected override void OnRaySelect()
     {
         Debug.Log("OnSelect");
-
-        //GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         
         foreach (Collider col in Colliders)
         {
