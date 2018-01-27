@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class RayReceiver : MonoBehaviour {
+public abstract class RayReceiver : MonoBehaviour
+{
 
     protected abstract void OnRayEnter();
 
