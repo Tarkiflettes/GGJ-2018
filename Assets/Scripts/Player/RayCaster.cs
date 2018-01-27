@@ -55,6 +55,7 @@ public class RayCaster : MonoBehaviour
         }
         if (collider.gameObject.GetComponent<Pickable>())
         {
+            Debug.Log(collider.gameObject);
             Player.PickObject(collider.gameObject);
         }
     }

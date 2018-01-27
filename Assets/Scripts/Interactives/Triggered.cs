@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public abstract class Triggered : MonoBehaviour
+public interface Triggered
 {
 
-    public abstract void Action();
+    void Action();
 
 }

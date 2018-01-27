@@ -19,10 +19,11 @@ public abstract class Trigger : RayReceiver
 
     protected override void OnRayEnter()
     {
+        // TODO bugguer
         var ol = GetComponent<Outline>();
         if (ol != null)
         {
-            ol.eraseRenderer = false;
+            ol.color = 1;
         }
     }
 
@@ -40,7 +41,7 @@ public abstract class Trigger : RayReceiver
         var ol = GetComponent<Outline>();
         if (ol != null)
         {
-            ol.eraseRenderer = true;
+            ol.color = 2;
         }
     }
 

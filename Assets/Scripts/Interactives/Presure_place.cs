@@ -1,9 +1,7 @@
-﻿using Assets.Scripts.Interactives;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Presure_place : Trigger {
+
     protected override void Action()
     {
     }

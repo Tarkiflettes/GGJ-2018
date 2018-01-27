@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Door : Triggered
+public class Door : MonoBehaviour, Triggered
 {
 
     public bool Direction = true;
