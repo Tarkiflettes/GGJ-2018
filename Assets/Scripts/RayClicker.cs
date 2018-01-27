@@ -18,9 +18,10 @@ public class RayClicker : MonoBehaviour {
                 {
                     hitInfo.collider.SendMessage("NextStep", SendMessageOptions.DontRequireReceiver);
                 }
-                else
+                else if (hitInfo.collider.gameObject.GetComponent<Lock>())
                 {
-                    Debug.Log("Nope ");
+                    Debug.Log("Lock");
+                    hitInfo.collider.SendMessage("OnSelect", SendMessageOptions.DontRequireReceiver);
                 }
             }
         }
