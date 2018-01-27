@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Door : MonoBehaviour, Triggered
+public class Door : Triggered
 {
 
     public bool Direction = true;
@@ -38,7 +38,7 @@ public class Door : MonoBehaviour, Triggered
         _busy = false;
     }
 
-    public void Action()
+    public override void Action()
     {
         if (_busy) return;
 

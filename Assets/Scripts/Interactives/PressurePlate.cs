@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Presure_place : Trigger {
+public class PressurePlate : Trigger {
 
     protected override void Action()
     {

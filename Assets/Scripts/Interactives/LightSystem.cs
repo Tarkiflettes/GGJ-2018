@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Light_system : Trigger
+public class LightSystem : Trigger
 {
 
     protected override void Action()
