@@ -109,8 +109,7 @@ public class Player : MonoBehaviour
             _lockScreenAction.transform.rotation = Quaternion.Lerp(_lockScreenAction.transform.rotation, _lockScreenAction._rotationOrigin, i);
             yield return new WaitForSeconds(0.01f);
         }
-        //Debug.Log(_lockScreenAction.transform.position);
-       // Debug.Log(_lockScreenAction._transformOrigin.position);
-        //_lockScreenAction.transform.position = _lockScreenAction._positionOrigin;
+        _lockScreenAction.transform.position = _lockScreenAction._positionOrigin;
+        _lockScreenAction.transform.rotation = _lockScreenAction._rotationOrigin;
     }
 }

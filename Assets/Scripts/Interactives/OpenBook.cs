@@ -8,31 +8,40 @@ public class OpenBook : RayReceiver
     private bool _busy = false;
     public float speed = 0.01f;
 
-    private IEnumerator ContinuousRotation()
+    private IEnumerator ContinuousRotationOpen()
     {
-        
-        for (var i = 0; i < (int)(45/speed); i++)
+        for (var i = 0; i < 45; i++)
         {
             foreach (Transform child in GetComponentsInChildren<Transform>())
             {
-                if (!open)
-                    child.Rotate(Vector3.down, speed);
-                else
-                    child.Rotate(Vector3.up, speed);
+                child.Rotate(Vector3.up, 2);
             }
-                yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.01f);
         }
-        _busy = false;
-        open = !open;
+    }
+
+    private IEnumerator ContinuousRotationClose()
+    {
+        for (var i = 0; i < 45; i++)
+        {
+            foreach (Transform child in GetComponentsInChildren<Transform>())
+            {
+                child.Rotate(Vector3.down, 2);
+            }
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 
     protected void Action() {
-        if (!_busy)
+        if (open)
         {
             _busy = true;
-            var rotate = ContinuousRotation();
-            StartCoroutine(rotate);
+            StartCoroutine(ContinuousRotationOpen());
+        } else
+        {
+            StartCoroutine(ContinuousRotationClose());
         }
+        open = !open;
     }
 
     protected override void OnRayEnter()
@@ -42,6 +51,7 @@ public class OpenBook : RayReceiver
 
     protected override void OnRaySelect()
     {
+        Debug.Log("BookOpen");
         Action();
     }
 

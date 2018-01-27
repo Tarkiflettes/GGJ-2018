@@ -35,7 +35,7 @@ public class LockScreenAction : RayReceiver
     {
         Debug.Log("OnSelect");
 
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        //GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         
         foreach (Collider col in Colliders)
         {

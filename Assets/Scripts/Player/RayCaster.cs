@@ -37,12 +37,13 @@ public class RayCaster : MonoBehaviour
                 {
                     Debug.Log("ParentGoing");
                     currentCollider.transform.parent.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+                    OnSelect(currentCollider.transform.parent.gameObject);
                 }
                 else
                 {
                     currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+                    OnSelect(currentCollider.gameObject);
                 }
-                OnSelect(currentCollider);
             }
         }
         else
@@ -55,20 +56,20 @@ public class RayCaster : MonoBehaviour
         }
     }
 
-    protected virtual void OnSelect(Collider collider)
+    protected virtual void OnSelect(GameObject gameObject)
     {
-        if (collider.gameObject.GetComponent<Movable>())
+        if (gameObject.GetComponent<Movable>())
         {
-            Player.GrabObject(collider.gameObject);
+            Player.GrabObject(gameObject);
         }
-        if (collider.gameObject.GetComponent<Pickable>())
+        if (gameObject.GetComponent<Pickable>())
         {
-            Debug.Log(collider.gameObject);
-            Player.PickObject(collider.gameObject);
+            Debug.Log(gameObject);
+            Player.PickObject(gameObject);
         }
-        if (collider.gameObject.GetComponent<LockScreenAction>())
+        if (gameObject.GetComponent<LockScreenAction>())
         {
-            Player.LockScreen(collider.gameObject.GetComponent<LockScreenAction>());
+            Player.LockScreen(gameObject.GetComponent<LockScreenAction>());
         }
 
     }
