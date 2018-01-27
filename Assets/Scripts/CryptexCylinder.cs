@@ -9,7 +9,7 @@ public class CryptexCylinder : MonoBehaviour {
     [ContextMenu("Rotate")]
     void NextStep()
     {
-        transform.Rotate(Vector3.forward, 360f / 26f);
+        transform.Rotate(Vector3.right, 360f / 26f);
     }
 
     private void OnDrawGizmos()

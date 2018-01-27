@@ -3,17 +3,24 @@ using UnityEngine;
 
 public class LockScreenAction : RayReceiver
 {
-    public MeshCollider MajorCollider;
     public List<MeshCollider> Colliders;
+
+    //public Transform TransformOrigin { get { return _transformOrigin; } }
+    [HideInInspector]
+    public Vector3 _positionOrigin;
+    [HideInInspector]
+    public Quaternion _rotationOrigin;
 
     private bool ScreenLocked = false;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-
+        _positionOrigin = transform.position;
+        _rotationOrigin = transform.rotation;
+        Debug.Log(transform.position);
     }
 
+    //Overrides
     protected override void OnRayEnter()
     {
         Debug.Log("OnEnter");
@@ -28,9 +35,8 @@ public class LockScreenAction : RayReceiver
     {
         Debug.Log("OnSelect");
 
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        //GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         
-        //MajorCollider.enabled = ScreenLocked;
         foreach (Collider col in Colliders)
         {
             col.enabled = !ScreenLocked;
