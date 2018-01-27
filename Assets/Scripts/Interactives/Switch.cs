@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Switch : Trigger
 {
+    private bool busy = false;
 
     private IEnumerator ContinuousRotation(Vector3 vector)
     {
@@ -12,6 +13,7 @@ public class Switch : Trigger
             transform.Rotate(vector, 1);
             yield return new WaitForSeconds(0.01f);
         }
+        busy = false;
     }
 
     protected override void Action()
@@ -23,8 +25,13 @@ public class Switch : Trigger
             vector = Vector3.back;
         }
 
-        var continuousRotation = ContinuousRotation(vector);
-        StartCoroutine(continuousRotation);
+        if (!busy)
+        {
+            busy = true;
+            var continuousRotation = ContinuousRotation(vector);
+            StartCoroutine(continuousRotation);
+        }
+        
     }
 
 }
