@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenBook : Trigger
+public class OpenBook : RayReceiver
 {
     private bool open = false;
     private bool _busy = false;
@@ -13,7 +13,7 @@ public class OpenBook : Trigger
         
         for (var i = 0; i < (int)(45/speed); i++)
         {
-            foreach (Transform child in transform.parent)
+            foreach (Transform child in GetComponentsInChildren<Transform>())
             {
                 if (!open)
                     child.Rotate(Vector3.down, speed);
@@ -26,13 +26,27 @@ public class OpenBook : Trigger
         open = !open;
     }
 
-    protected override void Action()
-    {
+    protected void Action() {
         if (!_busy)
         {
             _busy = true;
             var rotate = ContinuousRotation();
             StartCoroutine(rotate);
         }
+    }
+
+    protected override void OnRayEnter()
+    {
+        
+    }
+
+    protected override void OnRaySelect()
+    {
+        Action();
+    }
+
+    protected override void OnRayExit()
+    {
+        
     }
 }

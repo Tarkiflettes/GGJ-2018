@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class LockScreenAction : RayReceiver
 {
-    public MeshCollider MajorCollider;
     public List<MeshCollider> Colliders;
 
     //public Transform TransformOrigin { get { return _transformOrigin; } }
+    [HideInInspector]
     public Vector3 _positionOrigin;
+    [HideInInspector]
     public Quaternion _rotationOrigin;
 
     private bool ScreenLocked = false;
@@ -36,7 +37,6 @@ public class LockScreenAction : RayReceiver
 
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         
-        //MajorCollider.enabled = ScreenLocked;
         foreach (Collider col in Colliders)
         {
             col.enabled = !ScreenLocked;
