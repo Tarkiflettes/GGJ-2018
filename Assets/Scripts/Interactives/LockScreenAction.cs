@@ -27,6 +27,7 @@ public class LockScreenAction : RayReceiver
 
     protected override void OnRaySelect()
     {
+        Debug.Log("OnSelect");
         //MajorCollider.enabled = ScreenLocked;
         foreach (Collider col in Colliders)
         {

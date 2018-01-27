@@ -16,7 +16,6 @@ public class RayClicker : MonoBehaviour {
             {
                 if (hitInfo.collider.gameObject.GetComponent<CryptexCylinder>())
                 {
-
                     hitInfo.collider.SendMessage("NextStep", SendMessageOptions.DontRequireReceiver);
                 }
                 else
