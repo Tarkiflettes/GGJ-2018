@@ -10,11 +10,17 @@ public class Presure_place : Trigger {
 
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log(collider.name);
+        if(collider.name == "Character")
+        {
+            transform.position += new Vector3(0, 0.5f, 0); ;
+        }
     }
 
     private void OnTriggerExit(Collider collider)
     {
-        
+        if (collider.name == "Character")
+        {
+            transform.position += new Vector3(0, -0.5f, 0); ;
+        }
     }
 }
