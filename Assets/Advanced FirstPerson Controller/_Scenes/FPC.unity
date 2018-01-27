@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,30 +113,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
 --- !u!1 &198550074
+=======
+--- !u!1 &733181810
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   - component: {fileID: 198550078}
   - component: {fileID: 198550077}
   - component: {fileID: 198550076}
   - component: {fileID: 198550075}
   m_Layer: 0
   m_Name: Wall (4)
+=======
+  - component: {fileID: 733181814}
+  - component: {fileID: 733181813}
+  - component: {fileID: 733181812}
+  - component: {fileID: 733181811}
+  m_Layer: 0
+  m_Name: Floor
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
 --- !u!23 &198550075
+=======
+--- !u!23 &733181811
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   m_GameObject: {fileID: 198550074}
+=======
+  m_GameObject: {fileID: 733181810}
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -145,7 +166,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9e6987e056e16ed40924ba8cf5f907a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -165,6 +186,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
 --- !u!65 &198550076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -178,17 +200,41 @@ BoxCollider:
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &198550077
+=======
+--- !u!64 &733181812
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733181810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &733181813
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   m_GameObject: {fileID: 198550074}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &198550078
+=======
+  m_GameObject: {fileID: 733181810}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &733181814
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   m_GameObject: {fileID: 198550074}
   m_LocalRotation: {x: -0, y: 0.7071549, z: -0, w: -0.70705867}
   m_LocalPosition: {x: -3.44, y: 1.73, z: 6.95}
@@ -198,12 +244,24 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 269.992, z: 0}
 --- !u!1 &289243381
+=======
+  m_GameObject: {fileID: 733181810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.565085, y: 2.565082, z: 2.565082}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &828671562
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100010, guid: 5e1b14317d156064c8e399ffa17f81d8, type: 3}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   - component: {fileID: 289243382}
   - component: {fileID: 289243384}
   - component: {fileID: 289243383}
@@ -211,11 +269,21 @@ GameObject:
   - component: {fileID: 289243386}
   m_Layer: 8
   m_Name: obj_criptext_ring_4_of_5
+=======
+  - component: {fileID: 828671566}
+  - component: {fileID: 828671565}
+  - component: {fileID: 828671564}
+  - component: {fileID: 828671563}
+  - component: {fileID: 828671567}
+  m_Layer: 0
+  m_Name: Cube
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
 --- !u!4 &289243382
 Transform:
   m_ObjectHideFlags: 0
@@ -230,12 +298,19 @@ Transform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &289243383
+=======
+--- !u!23 &828671563
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300008, guid: 5e1b14317d156064c8e399ffa17f81d8,
     type: 3}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   m_GameObject: {fileID: 289243381}
+=======
+  m_GameObject: {fileID: 828671562}
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -244,7 +319,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   - {fileID: 2100002, guid: 5e1b14317d156064c8e399ffa17f81d8, type: 3}
+=======
+  - {fileID: 2100000, guid: 5937af842392dc94eade2167fd071a70, type: 2}
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -264,6 +343,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
 --- !u!33 &289243384
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -298,6 +378,136 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &438045701
+=======
+--- !u!65 &828671564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828671562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &828671565
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828671562}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &828671566
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828671562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &828671567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828671562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a456c0175d0ab947965a7f9dca409c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &837216114
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.2472374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.8534732
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604921767727148, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8d9a356ae35e4e24cbf7205ab8b7a9c6, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &850205487
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.16595641
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.779076
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710695
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473921589403418, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &857236419
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100004, guid: 884288f5bc6a6b54d94b704ec98137da, type: 3}
@@ -495,6 +705,7 @@ Transform:
   - {fileID: 917032215}
   - {fileID: 1104607307}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/_Scenes/FPC.unity
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &503632516
@@ -2337,3 +2548,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1761101791
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.498
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.66822
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.4632
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128520056653294, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7bf58cecfd2089441a07d865830a27fa, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> Ludovic:Assets/Advanced FirstPerson Controller/_Scenes/FPC.unity
