@@ -55,6 +55,8 @@ public class Player : MonoBehaviour
 
             //Fade out de la boule autour de la tête
             Fader.Fade(0);
+
+            PlayerCollider.radius = _originRadius;
         }
     }
 

@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: 8c801f3e38e05f043911897bee63d4e2
+timeCreated: 1496505190
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chest_wooden_2
+    100004: chest_wooden_3
+    100006: chest_wooden_4
+    100008: chest_wooden_5
+    100010: chest_wooden_gold
+    400000: //RootNode
+    400002: chest_wooden_2
+    400004: chest_wooden_3
+    400006: chest_wooden_4
+    400008: chest_wooden_5
+    400010: chest_wooden_gold
+    2300000: //RootNode
+    2300002: chest_wooden_2
+    2300004: chest_wooden_3
+    2300006: chest_wooden_4
+    2300008: chest_wooden_5
+    2300010: chest_wooden_gold
+    3300000: //RootNode
+    3300002: chest_wooden_2
+    3300004: chest_wooden_3
+    3300006: chest_wooden_4
+    3300008: chest_wooden_5
+    3300010: chest_wooden_gold
+    4300000: chest_wooden_1
+    4300002: chest_wooden_5
+    4300004: chest_wooden_4
+    4300006: chest_wooden_2
+    4300008: chest_wooden_3
+    4300010: chest_wooden_gold
+    7400000: Shake
+    7400002: Open
+    7400004: Close
+    7400006: Shake //// chest_wooden_1
+    7400008: Open //// chest_wooden_1
+    7400010: Close //// chest_wooden_1
+    7400012: Full
+    9500000: //RootNode
+    11100000: //RootNode
+    11100002: chest_wooden_2
+    11100004: chest_wooden_3
+    11100006: chest_wooden_4
+    11100008: chest_wooden_5
+    11100010: chest_wooden_gold
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Shake
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chest_wooden_2
+        weight: 1
+      - path: chest_wooden_2/chest_wooden_3
+        weight: 1
+      - path: chest_wooden_5
+        weight: 1
+      - path: chest_wooden_5/chest_wooden_4
+        weight: 1
+      - path: chest_wooden_gold
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Open
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chest_wooden_2
+        weight: 1
+      - path: chest_wooden_2/chest_wooden_3
+        weight: 1
+      - path: chest_wooden_5
+        weight: 1
+      - path: chest_wooden_5/chest_wooden_4
+        weight: 1
+      - path: chest_wooden_gold
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Close
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chest_wooden_2
+        weight: 1
+      - path: chest_wooden_2/chest_wooden_3
+        weight: 1
+      - path: chest_wooden_5
+        weight: 1
+      - path: chest_wooden_5/chest_wooden_4
+        weight: 1
+      - path: chest_wooden_gold
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Full
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chest_wooden_2
+        weight: 1
+      - path: chest_wooden_2/chest_wooden_3
+        weight: 1
+      - path: chest_wooden_5
+        weight: 1
+      - path: chest_wooden_5/chest_wooden_4
+        weight: 1
+      - path: chest_wooden_gold
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

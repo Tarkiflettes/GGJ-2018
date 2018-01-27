@@ -51,7 +51,6 @@ public class OpenBook : RayReceiver
 
     protected override void OnRaySelect()
     {
-        Debug.Log("BookOpen");
         Action();
     }
 

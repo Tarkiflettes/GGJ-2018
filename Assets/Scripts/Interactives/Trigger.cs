@@ -19,16 +19,16 @@ public abstract class Trigger : RayReceiver
 
     protected override void OnRayEnter()
     {
-        // TODO bugguer
         var ol = GetComponent<Outline>();
         if (ol != null)
         {
-            ol.color = 1;
+            ol.enabled = true;
         }
     }
 
     protected override void OnRaySelect()
     {
+        Debug.Log("OnRaySelect");
         if (!CanTrigger())
             return;
         OpenTrigger();
@@ -41,7 +41,7 @@ public abstract class Trigger : RayReceiver
         var ol = GetComponent<Outline>();
         if (ol != null)
         {
-            ol.color = 2;
+            ol.enabled = false;
         }
     }
 
