@@ -7,6 +7,7 @@ namespace Assets.Scripts.Interactives
     public abstract class Trigger : RayReceiver
     {
         public List<Triggered> TriggeredList;
+        public List<Pickable> RequiredToTrigger;
 
         protected void Triggering()
         {
@@ -29,6 +30,8 @@ namespace Assets.Scripts.Interactives
 
         protected override void OnRaySelect()
         {
+            if (!CanBeTrigger())
+                return;
             Triggering();
             Action();
         }
@@ -40,6 +43,21 @@ namespace Assets.Scripts.Interactives
             {
                 ol.eraseRenderer = true;
             }
+        }
+
+        private bool CanBeTrigger()
+        {
+            var players = GameObject.FindGameObjectsWithTag("Payer");
+            foreach (var player in players)
+            {
+                var p = player.GetComponent<Player>();
+                foreach (var r in RequiredToTrigger)
+                {
+                    if (!p.Inventory.Pickables.Contains(r))
+                        return false;
+                }
+            }
+            return true;
         }
     }
 }

@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
 
     public Transform HoldPoint;
+    public Inventory Inventory;
     private GameObject _objectHeld;
     private Rigidbody _objectHeldRb;
     private Transform _objectHeldOldParent;
