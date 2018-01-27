@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Drawer : Triggered
+public class Drawer : Trigger
 {
 
     public bool Closed = true;
-    public int Length = 50;
+    public int Distance = 35;
 
     private int _closed = 1;
     private bool _busy = false;
 
-    public override void Action()
+    protected override void Action()
     {
         if (_busy) return;
 
@@ -24,10 +24,9 @@ public class Drawer : Triggered
         _closed = 1;
         if (Closed)
             _closed = -1;
-
-        for (var i = 0; i < 90; i++)
+        for (var i = 0; i < Distance; i++)
         {
-            transform.Rotate(Vector3.forward, _closed);
+            transform.Translate(Vector3.left * Time.deltaTime * _closed, Space.World);
             yield return new WaitForSeconds(0.01f);
         }
 
