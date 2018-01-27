@@ -30,7 +30,7 @@ public class Player : MonoBehaviour {
             _objectHeldRb = gameObject.GetComponent<Rigidbody>();
             // Gestion du parent
             _objectHeldOldParent = gameObject.transform.parent;
-            gameObject.transform.parent = HoldPoint;
+            gameObject.transform.parent = HoldPoint;    
         }
         else
         {
