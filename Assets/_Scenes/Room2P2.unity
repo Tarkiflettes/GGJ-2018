@@ -302,6 +302,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HoldPoint: {fileID: 69758183}
   Inventory: {fileID: 0}
+  FPController: {fileID: 0}
+  Fader: {fileID: 0}
 --- !u!1001 &240123075
 Prefab:
   m_ObjectHideFlags: 0
