@@ -49,7 +49,6 @@ public class DigicodeLocker : Trigger {
             }
         } else
         {
-            Debug.Log(CodeEntered.Length);
             if (CodeEntered.Length == 4)
             {
                 _safeButtons[11].Material.SetColor("_Color", Color.yellow);
