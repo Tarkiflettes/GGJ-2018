@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GoToParent
   - Rotator
+  - NoReaction
+  - GoToParentRotator
   layers:
   - Default
   - TransparentFX

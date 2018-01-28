@@ -3,37 +3,44 @@ using UnityEngine;
 
 public class Switch : Trigger
 {
+<<<<<<< HEAD
     private bool _busy = false;
     private bool on = false;
+=======
+    //private bool _busy = false;
+>>>>>>> Florian
 
-    private IEnumerator ContinuousRotation(Vector3 vector)
-    {
-        for (var i = 0; i < 45; i++)
-        {
-            transform.Rotate(vector, 1);
-            yield return new WaitForSeconds(0.01f);
-        }
-        _busy = false;
-    }
+    public Rotator Rotator;
+    public Vector3 Axis;
+    public int Angle = 70;
+
+    private bool turnedOn;
 
     protected override void Action()
     {
+<<<<<<< HEAD
         var vector = Vector3.forward;
 
         Debug.Log(transform.rotation);
 
         if (on)
+=======
+        if(!turnedOn)
+>>>>>>> Florian
         {
-            vector = Vector3.back;
+            Rotator.Open(Axis, Angle);
         }
-
-        if (!_busy)
+        else
         {
+<<<<<<< HEAD
             _busy = true;
             on = !on;
             var continuousRotation = ContinuousRotation(vector);
             StartCoroutine(continuousRotation);
+=======
+            Rotator.Close();
+>>>>>>> Florian
         }
+        turnedOn = !turnedOn;
     }
-
 }

@@ -10,13 +10,13 @@ public class CryptexCylinder : MonoBehaviour {
     public Vector3 Axis;
 
     [ContextMenu("Rotate")]
-    void NextStepD()
+    void NextStepG()
     {
         Step--;
         transform.Rotate(Axis, 360f / Size);
     }
 
-    void NextStepG()
+    void NextStepD()
     {
         Step++;
         transform.Rotate(Axis*-1, 360f / Size);
