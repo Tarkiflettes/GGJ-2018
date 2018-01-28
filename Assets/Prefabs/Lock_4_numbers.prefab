@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114843867196358664}
   - component: {fileID: 114919101475634350}
   m_Layer: 8
-  m_Name: Lock_4_Numbers
+  m_Name: Lock_4_numbers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -566,6 +566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CylinderPosition: 0
   Step: 0
+  Size: 26
   Axis: {x: 0, y: 0, z: 1}
 --- !u!114 &114392238257776070
 MonoBehaviour:
@@ -580,6 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CylinderPosition: 0
   Step: 0
+  Size: 26
   Axis: {x: 0, y: 0, z: 0}
 --- !u!114 &114449362904315518
 MonoBehaviour:
@@ -594,6 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CylinderPosition: 0
   Step: 0
+  Size: 26
   Axis: {x: 0, y: 0, z: 1}
 --- !u!114 &114485812965325174
 MonoBehaviour:
@@ -608,6 +611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CylinderPosition: 0
   Step: 0
+  Size: 26
   Axis: {x: 0, y: 0, z: 1}
 --- !u!114 &114514649402947300
 MonoBehaviour:
@@ -622,6 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CylinderPosition: 0
   Step: 0
+  Size: 26
   Axis: {x: 0, y: 0, z: 1}
 --- !u!114 &114843867196358664
 MonoBehaviour:
