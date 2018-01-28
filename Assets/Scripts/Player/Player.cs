@@ -104,14 +104,14 @@ public class Player : MonoBehaviour
             _lockScreenAction.transform.rotation = Quaternion.Lerp(_lockScreenAction.transform.rotation, Quaternion.LookRotation(direction, _lockScreenAction.transform.up), 0.1f);
             yield return new WaitForSeconds(0.01f);
         }
-        direction = _lockScreenAction.transform.position - _lockScreenAction._positionOrigin;
+        direction = _lockScreenAction.transform.localPosition - _lockScreenAction._positionOrigin;
         for (float i = 0; i < 1; i +=0.1f)
         {
-            _lockScreenAction.transform.position = Vector3.Lerp(_lockScreenAction.transform.position, _lockScreenAction._positionOrigin, i);
-            _lockScreenAction.transform.rotation = Quaternion.Lerp(_lockScreenAction.transform.rotation, _lockScreenAction._rotationOrigin, i);
+            _lockScreenAction.transform.localPosition = Vector3.Lerp(_lockScreenAction.transform.localPosition, _lockScreenAction._positionOrigin, i);
+            _lockScreenAction.transform.localRotation = Quaternion.Lerp(_lockScreenAction.transform.localRotation, _lockScreenAction._rotationOrigin, i);
             yield return new WaitForSeconds(0.01f);
         }
-        _lockScreenAction.transform.position = _lockScreenAction._positionOrigin;
-        _lockScreenAction.transform.rotation = _lockScreenAction._rotationOrigin;
+        _lockScreenAction.transform.localPosition = _lockScreenAction._positionOrigin;
+        _lockScreenAction.transform.localRotation = _lockScreenAction._rotationOrigin;
     }
 }

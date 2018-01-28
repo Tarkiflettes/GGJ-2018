@@ -15,8 +15,8 @@ public class LockScreenAction : RayReceiver
 
     private void Start()
     {
-        _positionOrigin = transform.position;
-        _rotationOrigin = transform.rotation;
+        _positionOrigin = transform.localPosition;
+        _rotationOrigin = transform.localRotation;
     }
 
     //Overrides
