@@ -5,21 +5,44 @@ using UnityEngine;
 public class LightKitchen : Triggered
 {
     private bool on = false;
+    public int etat = 0;
 
     public override void Action()
     {
-        if (on)
+        if(etat == 0)
         {
-            GetComponent<Renderer>().material.color = Color.clear;
-        } else
-        {
-            GetComponent<Renderer>().material.color = Color.red;
+            if (on)
+            {
+                GetComponent<Renderer>().material.color = Color.clear;
+            }
+            else
+            {
+                GetComponent<Renderer>().material.color = Color.red;
+            }
         }
+        else
+        {
+            if (on)
+            {
+                GetComponent<Renderer>().material.color = Color.clear;
+            }
+            else
+            {
+                GetComponent<Renderer>().material.color = Color.blue;
+            }
+        }
+        
         on = !on;
     }
 
     public void Start()
     {
-        GetComponent<Renderer>().material.color = Color.clear;
+        if(etat == 0)
+        {
+            GetComponent<Renderer>().material.color = Color.clear;
+        } else
+        {
+            GetComponent<Renderer>().material.color = Color.black;
+        }
     }
 }

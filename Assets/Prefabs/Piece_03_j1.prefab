@@ -1254,6 +1254,7 @@ GameObject:
   - component: {fileID: 33064128611995516}
   - component: {fileID: 136683725420507166}
   - component: {fileID: 23668486964457580}
+  - component: {fileID: 114047039613650458}
   m_Layer: 8
   m_Name: Cylinder_02 (1)
   m_TagString: Untagged
@@ -6875,6 +6876,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.046155747, y: 0.01691508, z: 0.02522409}
   m_Center: {x: -0.021733547, y: 0.038922437, z: -0.0000009041688}
+--- !u!114 &114047039613650458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1747193864111140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db68adf0bac0f364d9f4f4d35c94e822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  etat: 1
 --- !u!114 &114116002245102284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7051,6 +7064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db68adf0bac0f364d9f4f4d35c94e822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  etat: 0
 --- !u!114 &114520909378258350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7107,6 +7121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db68adf0bac0f364d9f4f4d35c94e822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  etat: 0
 --- !u!114 &114654524815548564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7132,6 +7147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db68adf0bac0f364d9f4f4d35c94e822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  etat: 0
 --- !u!114 &114677532860899620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7237,6 +7253,7 @@ MonoBehaviour:
   - {fileID: 114510233824552526}
   - {fileID: 114615241124349398}
   - {fileID: 114667249376493156}
+  - {fileID: 114047039613650458}
   RequiredToTrigger: []
 --- !u!114 &114861066375756070
 MonoBehaviour:
