@@ -2,42 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door_Placard : Triggered
+public class Door_Placard : Trigger
 {
 
-    public Rotator rotator;
-    private bool _busy = false;
-    private bool on = false;
-
-    private IEnumerator ContinuousRotation(Vector3 vector)
-    {
-        for (var i = 0; i < 90; i++)
-        {
-            transform.Rotate(vector, 1);
-            yield return new WaitForSeconds(0.01f);
-        }
-        _busy = false;
-    }
+    public Rotator Rotator;
+    private bool _opened;
+    public Vector3 Axis;
 
     [ContextMenu("Open")]
-    public override void Action()
+    protected override void Action()
     {
-        var vector = Vector3.up;
-
-        Debug.Log(transform.rotation);
-
-        if (on)
+        if (!_opened)
         {
-            vector = Vector3.down;
+            Rotator.Open(Axis, 90);
         }
-
-        if (!_busy)
+        else
         {
-            _busy = true;
-            on = !on;
-            var continuousRotation = ContinuousRotation(vector);
-            StartCoroutine(continuousRotation);
+            Rotator.Close();
         }
+        _opened = !_opened;
     }
 
 }
