@@ -2345,11 +2345,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114845969664511132, guid: 31e0b5174c9494a42911b84f825b1acb,
-        type: 2}
-      propertyPath: TriggeredList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4814984975056152, guid: 31e0b5174c9494a42911b84f825b1acb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.3544848
@@ -2382,11 +2377,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114845969664511132, guid: 31e0b5174c9494a42911b84f825b1acb,
-        type: 2}
-      propertyPath: TriggeredList.Array.data[3]
-      value: 
-      objectReference: {fileID: 2011131631}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31e0b5174c9494a42911b84f825b1acb, type: 2}
   m_IsPrefabParent: 0
@@ -2726,23 +2716,6 @@ MonoBehaviour:
   FPController: {fileID: 0}
   Fader: {fileID: 0}
   PlayerCollider: {fileID: 0}
---- !u!1 &2011131629 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1747193864111140, guid: 31e0b5174c9494a42911b84f825b1acb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1425881343}
---- !u!114 &2011131631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2011131629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db68adf0bac0f364d9f4f4d35c94e822, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  etat: 1
 --- !u!1 &2040302887
 GameObject:
   m_ObjectHideFlags: 0
