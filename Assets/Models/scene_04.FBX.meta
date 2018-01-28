@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a19586e0422d0e04593cfc2edbdec8fb
-timeCreated: 1517078960
+guid: 45606bd6ea7053b4c888fafc59ed2c6b
+timeCreated: 1517103133
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -103,57 +103,12 @@ ModelImporter:
     4300028: obj_base_ceiling001
     4300030: obj_switch_base
     4300032: obj_switch_arm
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 'Material #184'
-    second: {fileID: 2100000, guid: d30afbe84c521c047a2f08c4ca8a77b1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 'Material #185'
-    second: {fileID: 2100000, guid: 59a6c0059aec746499833c4018b20f7d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 'Material #198'
-    second: {fileID: 2100000, guid: 2efb4b932c808c645a856954471eb594, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 'Material #206'
-    second: {fileID: 2100000, guid: cf25edcbbf7f21d419ad86a2c5148b13, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 'Material #207'
-    second: {fileID: 2100000, guid: 27a9cca95fa307c468df09dbefe1c99b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 'Material #208'
-    second: {fileID: 2100000, guid: db871bc3282fe294c8b85208ff3900f2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: m_gray
-    second: {fileID: 2100000, guid: 2e2b823344deae34789c4a5547489fc9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: m_noir
-    second: {fileID: 2100000, guid: 22ef610b51eee7049bb07b97b14b961e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: m_white
-    second: {fileID: 2100000, guid: 435e4faa92533464bbca186d62c77d91, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 2
+    materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
