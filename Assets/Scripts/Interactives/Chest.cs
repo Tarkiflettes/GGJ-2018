@@ -11,6 +11,7 @@ public class Chest : Triggered {
     {
         if(!_opened)
         {
+            Debug.Log("Rotate");
             Rotator.Open(Axis, 50);
         } else
         {

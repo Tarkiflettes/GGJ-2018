@@ -33,16 +33,19 @@ public class RayCaster : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if(currentCollider.tag =="GoToParent")
+                if(currentCollider.tag != "NoReaction")
                 {
-                    Debug.Log("ParentGoing");
-                    currentCollider.transform.parent.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
-                    OnSelect(currentCollider.transform.parent.gameObject);
-                }
-                else
-                {
-                    currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
-                    OnSelect(currentCollider.gameObject);
+                    if (currentCollider.tag =="GoToParent")
+                    {
+                        Debug.Log("ParentGoing");
+                        currentCollider.transform.parent.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+                        OnSelect(currentCollider.transform.parent.gameObject);
+                    }
+                    else
+                    {
+                        currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+                        OnSelect(currentCollider.gameObject);
+                    }
                 }
             }
         }

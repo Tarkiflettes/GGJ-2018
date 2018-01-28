@@ -10,7 +10,6 @@ public class Drawer : Trigger
 
     private int _closed = 1;
     private bool _busy = false;
-    
 
     protected override void Action()
     {
