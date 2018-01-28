@@ -1,12 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-<<<<<<< HEAD
-public class LightSystem : Triggered
-{
-    
-    public override void Action()
-=======
+
 public class LightSystem : MonoBehaviour
 {
     public int NbClignotements;
@@ -14,7 +9,6 @@ public class LightSystem : MonoBehaviour
     public Fader Fader;
 
     public IEnumerator ChangeColor()
->>>>>>> Florian
     {
         for (int i = 0; i<NbClignotements; i++)
         {
