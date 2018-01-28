@@ -32,7 +32,7 @@ public class Drawer : Trigger
         }
         for (var i = 0; i < Distance; i++)
         {
-            transform.Translate(Axisz * Time.deltaTime * _closed, Space.World);
+            transform.Translate(Axis * Time.deltaTime * _closed, Space.World);
             yield return new WaitForSeconds(0.01f);
         }
 

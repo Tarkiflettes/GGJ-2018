@@ -7,6 +7,8 @@ public abstract class Trigger : RayReceiver
     public List<Triggered> TriggeredList;
     public List<Pickable> RequiredToTrigger;
 
+    protected bool locked = false;
+
     protected void Triggering()
     {
         foreach (var t in TriggeredList)
@@ -62,16 +64,22 @@ public abstract class Trigger : RayReceiver
 
     private bool CanTrigger()
     {
-        var players = GameObject.FindGameObjectsWithTag("Player");
-        foreach (var player in players)
+        if(!locked)
         {
-            var p = player.GetComponent<Player>();
-            foreach (var r in RequiredToTrigger)
+            var players = GameObject.FindGameObjectsWithTag("Player");
+            foreach (var player in players)
             {
-                if (!p.Inventory.Contains(r))
-                    return false;
+                var p = player.GetComponent<Player>();
+                foreach (var r in RequiredToTrigger)
+                {
+                    if (!p.Inventory.Contains(r))
+                        return false;
+                }
             }
+            return true;
+        } else
+        {
+            return false;
         }
-        return true;
     }
 }

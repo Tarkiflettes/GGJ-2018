@@ -7,19 +7,20 @@ public class AlphabetLock : Trigger {
     public string CodeSeeked;
     public string Alphabet = "ABDCEFGHIJKLMNOPQRSTUVWXYZ";
     private CryptexCylinder[] _cryptexCylinder;
-    bool opened = true;
+    bool closed = true;
 
     // Use this for initialization
     void Start () {
         _cryptexCylinder = GetComponentsInChildren<CryptexCylinder>();
+        locked = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (opened && checkWord())
+        if (closed && checkWord())
         {
             Action();
-            opened = false;
+            closed = false;
         }
 	}
 
@@ -35,6 +36,7 @@ public class AlphabetLock : Trigger {
                 }
             }
         }
+        locked = false;
         return true;
     }
 
