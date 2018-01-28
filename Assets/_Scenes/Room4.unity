@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 35239983}
   - component: {fileID: 35239982}
   - component: {fileID: 35239981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_cancel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1202,9 +1202,8 @@ GameObject:
   - component: {fileID: 188633456}
   - component: {fileID: 188633455}
   - component: {fileID: 188633454}
-  - component: {fileID: 188633453}
   - component: {fileID: 188633452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1237,20 +1236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Value: 1
-  Pushed: 0
-  TakenIntoAccount: 0
---- !u!114 &188633453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 188633450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282906b13aa482c488241873746ebf7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Value: 
   Pushed: 0
   TakenIntoAccount: 0
 --- !u!64 &188633454
@@ -2282,7 +2267,7 @@ GameObject:
   - component: {fileID: 437768748}
   - component: {fileID: 437768747}
   - component: {fileID: 437768746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2582,7 +2567,7 @@ GameObject:
   - component: {fileID: 458705582}
   - component: {fileID: 458705581}
   - component: {fileID: 458705580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4084,7 +4069,7 @@ GameObject:
   - component: {fileID: 714950849}
   - component: {fileID: 714950848}
   - component: {fileID: 714950847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5375,7 +5360,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1831884904}
+      objectReference: {fileID: 1227023202}
     - target: {fileID: 4957163782564354, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -5915,37 +5900,6 @@ MonoBehaviour:
   Step: 0
   Size: 26
   Axis: {x: 0, y: 0, z: 0}
---- !u!84 &924950911
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 766
-  m_Height: 583
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &960395633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6190,7 +6144,7 @@ GameObject:
   - component: {fileID: 1055154541}
   - component: {fileID: 1055154540}
   - component: {fileID: 1055154539}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_validate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6553,7 +6507,7 @@ GameObject:
   - component: {fileID: 1115987748}
   - component: {fileID: 1115987747}
   - component: {fileID: 1115987746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7471,7 +7425,7 @@ GameObject:
   - component: {fileID: 1215442721}
   - component: {fileID: 1215442720}
   - component: {fileID: 1215442719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7648,6 +7602,37 @@ Transform:
   m_Father: {fileID: 2040302888}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 269.992, z: 0}
+--- !u!84 &1227023202
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 956
+  m_Height: 580
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1233630187
 GameObject:
   m_ObjectHideFlags: 0
@@ -7661,7 +7646,7 @@ GameObject:
   - component: {fileID: 1233630191}
   - component: {fileID: 1233630190}
   - component: {fileID: 1233630189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8980,7 +8965,7 @@ GameObject:
   - component: {fileID: 1403092307}
   - component: {fileID: 1403092306}
   - component: {fileID: 1403092305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9265,7 +9250,7 @@ GameObject:
   - component: {fileID: 1434509399}
   - component: {fileID: 1434509398}
   - component: {fileID: 1434509397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9977,9 +9962,11 @@ GameObject:
   - component: {fileID: 1592897265}
   - component: {fileID: 1592897264}
   - component: {fileID: 1592897266}
+  - component: {fileID: 1592897268}
+  - component: {fileID: 1592897267}
   m_Layer: 0
   m_Name: obj_wall_safe_
-  m_TagString: Untagged
+  m_TagString: Rotator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10066,10 +10053,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57aac517018710b4390bed2443d9aeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggeredList: []
+  TriggeredList:
+  - {fileID: 1592897268}
   RequiredToTrigger: []
   CodeSeeked: 9753
   CodeEntered: 
+--- !u!114 &1592897267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592897262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96c9036902afb54abcae14f3b36fffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Step: 2
+--- !u!114 &1592897268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592897262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc35dd7c32d81d942953bfecdb8b9929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rotator: {fileID: 1592897267}
 --- !u!1 &1597501408
 GameObject:
   m_ObjectHideFlags: 0
@@ -10858,6 +10870,37 @@ Transform:
   m_PrefabParentObject: {fileID: 4168966019111898, guid: 8805bed780dbf1b4c930b10ad016b444,
     type: 2}
   m_PrefabInternal: {fileID: 1719523890}
+--- !u!84 &1724830755
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 956
+  m_Height: 580
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1739289152
 GameObject:
   m_ObjectHideFlags: 0
@@ -11513,37 +11556,6 @@ MonoBehaviour:
   Step: 0
   Size: 26
   Axis: {x: 0, y: 0, z: 0}
---- !u!84 &1831884904
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 766
-  m_Height: 583
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1833060772
 GameObject:
   m_ObjectHideFlags: 0
@@ -11647,7 +11659,7 @@ GameObject:
   - component: {fileID: 1839574629}
   - component: {fileID: 1839574628}
   - component: {fileID: 1839574627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: obj_wall_safe_numpad_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

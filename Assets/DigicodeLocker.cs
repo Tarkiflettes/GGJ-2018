@@ -5,7 +5,7 @@ using UnityEngine;
 public class DigicodeLocker : Trigger {
 
     public string CodeSeeked;
-    public string CodeEntered;
+    public string CodeEntered = "";
     private SafeButton[] _safeButtons;
     bool closed = true;
 
@@ -13,12 +13,17 @@ public class DigicodeLocker : Trigger {
     void Start () {
         _safeButtons = GetComponentsInChildren<SafeButton>();
 
+        foreach (var button in _safeButtons)
+        {
+            _safeButtons[11].Material = button.GetComponent<Renderer>().material;
+        }
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (closed && checkPush())
         {
+            _safeButtons[11].Material.SetColor("_Color", Color.green);
             Action();
             closed = false;
         }
@@ -29,11 +34,12 @@ public class DigicodeLocker : Trigger {
         if (_safeButtons[10].Pushed)
         {
             CodeEntered = "";
+            _safeButtons[11].Material.SetColor("_Color", Color.white);
             resetButtons();
         }
         if (CodeEntered.Length < CodeSeeked.Length)
         {
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 10; i++)
             {
                 if (_safeButtons[i].Pushed && !_safeButtons[i].TakenIntoAccount)
                 {
@@ -43,15 +49,19 @@ public class DigicodeLocker : Trigger {
             }
         } else
         {
-            //put validate in yellow _safeButtons[11].transform.
-            if (_safeButtons[11].Pushed && CodeEntered != CodeSeeked)
+            Debug.Log(CodeEntered.Length);
+            if (CodeEntered.Length == 4)
+            {
+                _safeButtons[11].Material.SetColor("_Color", Color.yellow);
+            }
+            if (_safeButtons[11].Pushed && CodeEntered == CodeSeeked)
             {
                 resetButtons();
-                return false;
+                return true;
             }
         }
 
-        return true;
+        return false;
         
     }
 
@@ -66,6 +76,7 @@ public class DigicodeLocker : Trigger {
 
     protected override void Action()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("La porte doit s'ouvrir !");
+        Triggering();
     }
 }
