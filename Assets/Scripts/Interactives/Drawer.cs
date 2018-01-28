@@ -14,6 +14,11 @@ public class Drawer : Trigger
 
     protected override void Action()
     {
+        ActionBase();
+    }
+
+    private void ActionBase()
+    {
         if (_busy)
         {
             return;

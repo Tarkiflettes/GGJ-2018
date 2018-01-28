@@ -6,13 +6,13 @@ public class AlphabetLock : Trigger {
 
     public string CodeSeeked;
     public string Alphabet = "ABDCEFGHIJKLMNOPQRSTUVWXYZ";
-    private CryptexCylinder[] _cryptexCylinder;
+    private CryptexCylinder[] _cryptexCylinders;
     bool closed = true;
 
     // Use this for initialization
     void Start () {
-        _cryptexCylinder = GetComponentsInChildren<CryptexCylinder>();
-        foreach (var j in _cryptexCylinder)
+        _cryptexCylinders = GetComponentsInChildren<CryptexCylinder>();
+        foreach (var j in _cryptexCylinders)
         {
             j.Size = Alphabet.Length;
         }
@@ -30,28 +30,29 @@ public class AlphabetLock : Trigger {
 
     bool checkWord ()
     {
-        foreach (var i in CodeSeeked)
+        int index = 0;
+        foreach (var elemLocker in CodeSeeked)
         {
-            foreach (var j in _cryptexCylinder)
+            if (elemLocker != getLetter(_cryptexCylinders[index]))
             {
-                if (i != getLetter(j))
-                {
-                    return false;
-                }
+                return false;
             }
+            index++;
         }
-        locked = false;
+        //locked = false;
         return true;
     }
 
     char getLetter(CryptexCylinder currentCylinder)
     {
-        int currentStep = currentCylinder.Step % Alphabet.Length;
+        // (a % b + b) % b
+        int currentStep = (currentCylinder.Step % Alphabet.Length + Alphabet.Length) % Alphabet.Length;
+        //int currentStep = currentCylinder.Step % Alphabet.Length;
         return Alphabet[currentStep];
     }
 
     protected override void Action()
     {
-        throw new System.NotImplementedException();
+        Triggering();
     }
 }

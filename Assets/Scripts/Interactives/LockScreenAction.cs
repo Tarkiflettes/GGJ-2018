@@ -17,7 +17,6 @@ public class LockScreenAction : RayReceiver
     {
         _positionOrigin = transform.position;
         _rotationOrigin = transform.rotation;
-        Debug.Log(transform.position);
     }
 
     //Overrides
