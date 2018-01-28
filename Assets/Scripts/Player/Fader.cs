@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Fader : MonoBehaviour {
 
-    public float Speed;
+    public float Speed = 5f;
     private float _fadeIntensity;
     private Color _color;
     private bool _fadeIn;
