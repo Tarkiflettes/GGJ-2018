@@ -7,6 +7,7 @@ public class Switch : Trigger
 
     public Rotator Rotator;
     public Vector3 Axis;
+    public int Angle = 70;
 
     private bool turnedOn;
 
@@ -14,7 +15,7 @@ public class Switch : Trigger
     {
         if(!turnedOn)
         {
-            Rotator.Open(Axis, 70);
+            Rotator.Open(Axis, Angle);
         }
         else
         {

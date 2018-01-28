@@ -1,25 +1,22 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class LightSystem : Trigger
+public class LightSystem : MonoBehaviour
 {
+    public int NbClignotements;
+    public float TimeBetweenLights;
+    public Fader Fader;
 
-    protected override void Action()
+    public IEnumerator ChangeColor()
     {
-        StartCoroutine(ChangeColor());
-    }
+        for (int i = 0; i<NbClignotements; i++)
+        {
+            Fader.Fade(255);
+            yield return new WaitForSeconds(TimeBetweenLights);
+            Fader.Fade(0);
+            yield return new WaitForSeconds(TimeBetweenLights);
 
-    private IEnumerator ChangeColor()
-    {
-        GetComponent<Renderer>().material.color = Color.black;
-        yield return new WaitForSeconds(2);
-        GetComponent<Renderer>().material.color = Color.red;
-        yield return new WaitForSeconds(2);
-        GetComponent<Renderer>().material.color = Color.yellow;
-        yield return new WaitForSeconds(2);
-        GetComponent<Renderer>().material.color = Color.white;
-        yield return new WaitForSeconds(2);
-        GetComponent<Renderer>().material.color = Color.blue;
+        }
     }
 
 }
