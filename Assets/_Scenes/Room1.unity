@@ -14707,6 +14707,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Image: {fileID: 21300000, guid: 7b3817385a9f7564384001748b1daf7a, type: 3}
   Name: Rune
+--- !u!64 &440392503
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440392501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2778e616be2bd4d44b987aac66a4813a, type: 3}
 --- !u!1 &442653800
 GameObject:
   m_ObjectHideFlags: 0
@@ -20871,6 +20885,20 @@ Prefab:
     - target: {fileID: 1878444718630984, guid: 008f84cf2248be9478b3edc879bcc9b0, type: 2}
       propertyPath: m_Name
       value: Rune1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878444718630984, guid: 008f84cf2248be9478b3edc879bcc9b0, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114656557055779900, guid: 008f84cf2248be9478b3edc879bcc9b0,
+        type: 2}
+      propertyPath: CodeSeeked
+      value: VWLU
+      objectReference: {fileID: 0}
+    - target: {fileID: 114565790541205808, guid: 008f84cf2248be9478b3edc879bcc9b0,
+        type: 2}
+      propertyPath: Axis.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 008f84cf2248be9478b3edc879bcc9b0, type: 2}
@@ -56269,7 +56297,7 @@ MonoBehaviour:
   TriggeredList:
   - {fileID: 1670148978}
   RequiredToTrigger: []
-  CodeSeeked: BAAA
+  CodeSeeked: ADFW
   Alphabet: ABDCEFGHIJKLMNOPQRSTUVWXYZ
 --- !u!1 &1671143349
 GameObject:
