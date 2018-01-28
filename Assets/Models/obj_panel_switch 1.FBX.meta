@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: e3c685f6ffa29624d936995420245f23
+timeCreated: 1517148967
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: obj_panel_puzzle_door
+    100002: obj_panel_puzzle_switch_01
+    100004: obj_panel_puzzle_switch_010
+    100006: obj_panel_puzzle_switch_011
+    100008: obj_panel_puzzle_switch_012
+    100010: obj_panel_puzzle_switch_013
+    100012: obj_panel_puzzle_switch_014
+    100014: obj_panel_puzzle_switch_015
+    100016: obj_panel_puzzle_switch_016
+    100018: obj_panel_puzzle_switch_02
+    100020: obj_panel_puzzle_switch_03
+    100022: obj_panel_puzzle_switch_04
+    100024: obj_panel_puzzle_switch_05
+    100026: obj_panel_puzzle_switch_06
+    100028: obj_panel_puzzle_switch_07
+    100030: obj_panel_puzzle_switch_08
+    100032: obj_panel_puzzle_switch_09
+    100034: //RootNode
+    400000: obj_panel_puzzle_door
+    400002: obj_panel_puzzle_switch_01
+    400004: obj_panel_puzzle_switch_010
+    400006: obj_panel_puzzle_switch_011
+    400008: obj_panel_puzzle_switch_012
+    400010: obj_panel_puzzle_switch_013
+    400012: obj_panel_puzzle_switch_014
+    400014: obj_panel_puzzle_switch_015
+    400016: obj_panel_puzzle_switch_016
+    400018: obj_panel_puzzle_switch_02
+    400020: obj_panel_puzzle_switch_03
+    400022: obj_panel_puzzle_switch_04
+    400024: obj_panel_puzzle_switch_05
+    400026: obj_panel_puzzle_switch_06
+    400028: obj_panel_puzzle_switch_07
+    400030: obj_panel_puzzle_switch_08
+    400032: obj_panel_puzzle_switch_09
+    400034: //RootNode
+    2100000: m_noir
+    2100002: m_white
+    2300000: obj_panel_puzzle_door
+    2300002: obj_panel_puzzle_switch_01
+    2300004: obj_panel_puzzle_switch_010
+    2300006: obj_panel_puzzle_switch_011
+    2300008: obj_panel_puzzle_switch_012
+    2300010: obj_panel_puzzle_switch_013
+    2300012: obj_panel_puzzle_switch_014
+    2300014: obj_panel_puzzle_switch_015
+    2300016: obj_panel_puzzle_switch_016
+    2300018: obj_panel_puzzle_switch_02
+    2300020: obj_panel_puzzle_switch_03
+    2300022: obj_panel_puzzle_switch_04
+    2300024: obj_panel_puzzle_switch_05
+    2300026: obj_panel_puzzle_switch_06
+    2300028: obj_panel_puzzle_switch_07
+    2300030: obj_panel_puzzle_switch_08
+    2300032: obj_panel_puzzle_switch_09
+    2300034: //RootNode
+    3300000: obj_panel_puzzle_door
+    3300002: obj_panel_puzzle_switch_01
+    3300004: obj_panel_puzzle_switch_010
+    3300006: obj_panel_puzzle_switch_011
+    3300008: obj_panel_puzzle_switch_012
+    3300010: obj_panel_puzzle_switch_013
+    3300012: obj_panel_puzzle_switch_014
+    3300014: obj_panel_puzzle_switch_015
+    3300016: obj_panel_puzzle_switch_016
+    3300018: obj_panel_puzzle_switch_02
+    3300020: obj_panel_puzzle_switch_03
+    3300022: obj_panel_puzzle_switch_04
+    3300024: obj_panel_puzzle_switch_05
+    3300026: obj_panel_puzzle_switch_06
+    3300028: obj_panel_puzzle_switch_07
+    3300030: obj_panel_puzzle_switch_08
+    3300032: obj_panel_puzzle_switch_09
+    3300034: //RootNode
+    4300000: obj_panel_puzzle_base
+    4300002: obj_panel_puzzle_switch_01
+    4300004: obj_panel_puzzle_switch_011
+    4300006: obj_panel_puzzle_switch_07
+    4300008: obj_panel_puzzle_switch_02
+    4300010: obj_panel_puzzle_switch_03
+    4300012: obj_panel_puzzle_switch_09
+    4300014: obj_panel_puzzle_switch_05
+    4300016: obj_panel_puzzle_switch_06
+    4300018: obj_panel_puzzle_switch_010
+    4300020: obj_panel_puzzle_door
+    4300022: obj_panel_puzzle_switch_012
+    4300024: obj_panel_puzzle_switch_08
+    4300026: obj_panel_puzzle_switch_04
+    4300028: obj_panel_puzzle_switch_014
+    4300030: obj_panel_puzzle_switch_015
+    4300032: obj_panel_puzzle_switch_016
+    4300034: obj_panel_puzzle_switch_013
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
