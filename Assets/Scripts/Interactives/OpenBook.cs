@@ -5,41 +5,19 @@ using UnityEngine;
 public class OpenBook : RayReceiver
 {
     private bool open = false;
-    private bool _busy = false;
     public float speed = 0.01f;
 
-    private IEnumerator ContinuousRotationOpen()
-    {
-        for (var i = 0; i < 45; i++)
-        {
-            foreach (Transform child in GetComponentsInChildren<Transform>())
-            {
-                child.Rotate(Vector3.up, 2);
-            }
-            yield return new WaitForSeconds(0.01f);
-        }
-    }
+    public Rotator Rotator;
 
-    private IEnumerator ContinuousRotationClose()
-    {
-        for (var i = 0; i < 45; i++)
-        {
-            foreach (Transform child in GetComponentsInChildren<Transform>())
-            {
-                child.Rotate(Vector3.down, 2);
-            }
-            yield return new WaitForSeconds(0.01f);
-        }
-    }
+    public Vector3 Axis;
 
     protected void Action() {
-        if (open)
+        if (!open)
         {
-            _busy = true;
-            StartCoroutine(ContinuousRotationOpen());
+            Rotator.Open(Axis, 65);
         } else
         {
-            StartCoroutine(ContinuousRotationClose());
+            Rotator.Close();
         }
         open = !open;
     }
@@ -51,6 +29,7 @@ public class OpenBook : RayReceiver
 
     protected override void OnRaySelect()
     {
+        Debug.Log("Book open");
         Action();
     }
 

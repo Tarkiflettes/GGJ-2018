@@ -35,7 +35,7 @@ public class RayCaster : MonoBehaviour
             {
                 if(currentCollider.tag != "NoReaction")
                 {
-                    if (currentCollider.tag =="GoToParent")
+                    if (currentCollider.tag.Contains("GoToParent"))
                     {
                         Debug.Log("ParentGoing");
                         currentCollider.transform.parent.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
