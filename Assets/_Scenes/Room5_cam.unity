@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1047,6 +1047,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &322683841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,7 +1480,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 66e9acd543c2c0447b918d42099fac03, type: 2}
-  - {fileID: 2100000, guid: a60f8bb1c3bb6024c8fe5f2c02698ce7, type: 2}
+  - {fileID: 2100000, guid: 59aed6f9845a2bc4792f5ea8cbbcad21, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1756,6 +1760,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &459398720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2100,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 485339671}
   m_Mesh: {fileID: 4300012, guid: b11b5d6d250eae44ca7e66980cfa6cb4, type: 3}
+--- !u!84 &495168048
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1148
+  m_Height: 539
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &503632516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &543489380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,6 +2583,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &668474228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,6 +2763,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &695746785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,6 +2810,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!64 &695746788
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2816,6 +2871,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 695746785}
   m_Mesh: {fileID: 4300004, guid: 884288f5bc6a6b54d94b704ec98137da, type: 3}
+--- !u!84 &716484204
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1148
+  m_Height: 539
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &725550823
 Prefab:
   m_ObjectHideFlags: 0
@@ -2901,6 +2987,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!64 &730771640
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3221,6 +3311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &790467514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,6 +3707,36 @@ Prefab:
       propertyPath: headBobData.scale
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4982409868907586, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224070970174010446, guid: f6555c78ff78f81478e3017930a5c837,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789141464679632, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957163782564354, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214011417366840, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197135885924296, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20796422087516830, guid: f6555c78ff78f81478e3017930a5c837,
+        type: 2}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 495168048}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6555c78ff78f81478e3017930a5c837, type: 2}
   m_IsPrefabParent: 0
@@ -4033,6 +4157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &960395633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4531,6 +4659,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &1108914843
 GameObject:
   m_ObjectHideFlags: 0
@@ -5209,6 +5341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!64 &1238430404
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5815,6 +5951,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!64 &1415836177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6513,6 +6653,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!64 &1597501411
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7132,6 +7276,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
 --- !u!1 &1833345072
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,7 +7705,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1899898792}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
   m_Name: 
@@ -7579,6 +7727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggeredList: []
   RequiredToTrigger: []
+  Rotator: {fileID: 0}
+  Axis: {x: 0, y: 0, z: 0}
+  Angle: 70
 --- !u!1 &1933210951
 GameObject:
   m_ObjectHideFlags: 0
@@ -8371,3 +8522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a11cb71c4411498de37cd74229614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CylinderPosition: 0
+  Step: 0
+  Size: 26
+  Axis: {x: 0, y: 0, z: 0}
