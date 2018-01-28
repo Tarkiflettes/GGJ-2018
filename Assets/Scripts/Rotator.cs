@@ -8,11 +8,6 @@ public class Rotator : MonoBehaviour {
     public int Step = 2;
     private int _sens;
     private Vector3 _axis;
-
-    // Use this for initialization
-    void Start () {
-		
-	}
 	
     public void Open(Vector3 axis, int angle)
     {

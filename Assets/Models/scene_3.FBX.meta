@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 853ab033038dfe24887632f532664650
+timeCreated: 1517100900
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: obj_base_ceiling003
+    100004: obj_base_door003
+    100006: obj_base_floor003
+    100008: obj_base_walls002
+    100010: obj_bookcase_small_drawer_002
+    100012: obj_bookcase_small_drawer_003
+    100014: obj_bookcase_small_drawer_004
+    100016: obj_bookcase_small_drawer_1
+    100018: obj_lamp_floor
+    100020: obj_light_switch
+    100022: obj_light_switch_base
+    100024: obj_table_round
+    100026: //RootNode
+    400000: Box001
+    400002: obj_base_ceiling003
+    400004: obj_base_door003
+    400006: obj_base_floor003
+    400008: obj_base_walls002
+    400010: obj_bookcase_small_drawer_002
+    400012: obj_bookcase_small_drawer_003
+    400014: obj_bookcase_small_drawer_004
+    400016: obj_bookcase_small_drawer_1
+    400018: obj_lamp_floor
+    400020: obj_light_switch
+    400022: obj_light_switch_base
+    400024: obj_table_round
+    400026: //RootNode
+    2100000: 'Material #199'
+    2100002: m_gray
+    2100004: m_noir
+    2100006: m_white
+    2100008: m_wood
+    2100010: 'Material #184'
+    2100012: 'Material #185'
+    2100014: 'Material #198'
+    2100016: No Name
+    2100018: Material.003
+    2300000: Box001
+    2300002: obj_base_ceiling003
+    2300004: obj_base_door003
+    2300006: obj_base_floor003
+    2300008: obj_base_walls002
+    2300010: obj_bookcase_small_drawer_002
+    2300012: obj_bookcase_small_drawer_003
+    2300014: obj_bookcase_small_drawer_004
+    2300016: obj_bookcase_small_drawer_1
+    2300018: obj_lamp_floor
+    2300020: obj_light_switch
+    2300022: obj_light_switch_base
+    2300024: obj_table_round
+    3300000: Box001
+    3300002: obj_base_ceiling003
+    3300004: obj_base_door003
+    3300006: obj_base_floor003
+    3300008: obj_base_walls002
+    3300010: obj_bookcase_small_drawer_002
+    3300012: obj_bookcase_small_drawer_003
+    3300014: obj_bookcase_small_drawer_004
+    3300016: obj_bookcase_small_drawer_1
+    3300018: obj_lamp_floor
+    3300020: obj_light_switch
+    3300022: obj_light_switch_base
+    3300024: obj_table_round
+    4300000: obj_base_walls002
+    4300002: obj_base_door003
+    4300004: obj_base_ceiling003
+    4300006: obj_base_floor003
+    4300008: obj_table_round
+    4300010: obj_lamp_floor
+    4300012: obj_light_switch_base
+    4300014: obj_light_switch
+    4300016: Box001
+    4300018: obj_bookcase_small_drawer_1
+    4300020: obj_bookcase_small_drawer_002
+    4300022: obj_bookcase_small_drawer_003
+    4300024: obj_bookcase_small_drawer_004
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #184'
+    second: {fileID: 2100000, guid: 4833a2c49a06ff24e867e6ce3739eaaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #185'
+    second: {fileID: 2100000, guid: 41233ec18308e4d4db2e004604758c90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #198'
+    second: {fileID: 2100000, guid: 3e30de6597a0c6c47900d64ae1428212, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #199'
+    second: {fileID: 2100000, guid: d5341dc3ed826ac4d8f4894097a35e5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 318a209d6451541428d379d96f5b9f69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 392cb53d226abb245b62a3a10ec417be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_gray
+    second: {fileID: 2100000, guid: ff92cfa80bb42bf4cb2b311a99499d91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_noir
+    second: {fileID: 2100000, guid: 5b32f51fc5418fb4095a33d1ca77e0f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_white
+    second: {fileID: 2100000, guid: 66e9acd543c2c0447b918d42099fac03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood
+    second: {fileID: 2100000, guid: 4ff7c07fb2a03344389f759573e0f1b6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,14 +6,23 @@ public class Drawer : Trigger
 
     public bool Closed = true;
     public int Distance = 35;
+    public Vector3 Axis;
 
     private int _closed = 1;
     private bool _busy = false;
+    
 
     protected override void Action()
     {
-        if (_busy) return;
+        ActionBase();
+    }
 
+    private void ActionBase()
+    {
+        if (_busy)
+        {
+            return;
+        }
         _busy = true;
         var openClose = OpenClose();
         StartCoroutine(openClose);
@@ -23,10 +32,12 @@ public class Drawer : Trigger
     {
         _closed = 1;
         if (Closed)
+        {
             _closed = -1;
+        }
         for (var i = 0; i < Distance; i++)
         {
-            transform.Translate(Vector3.left * Time.deltaTime * _closed, Space.World);
+            transform.Translate(Axis * Time.deltaTime * _closed, Space.World);
             yield return new WaitForSeconds(0.01f);
         }
 
