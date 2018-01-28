@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 989864b26cc586c40aed6da794a9301b
+timeCreated: 1517103133
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: obbj_rune_table
+    100002: obbj_rune_table_button
+    100004: obbj_rune_table_trap
+    100006: obj_base_ceiling001
+    100008: obj_base_door001
+    100010: obj_base_floor001
+    100012: obj_base_walls
+    100014: obj_chandelier
+    100016: obj_fireplace
+    100018: obj_fireplace_logs
+    100020: obj_fireplace_trap_door
+    100022: obj_switch_arm
+    100024: obj_switch_base
+    100026: obj_table
+    100028: obj_wall_light
+    100030: obj_wall_light001
+    100032: obj_wall_light002
+    100034: obj_wall_light003
+    100036: obj_wall_light_glow
+    100038: obj_wall_light_glow001
+    100040: obj_wall_light_glow002
+    100042: obj_wall_light_glow003
+    100044: obj_wall_light_outside
+    100046: obj_wall_light_outside001
+    100048: obj_wall_light_outside002
+    100050: obj_wall_light_outside003
+    100052: Object002
+    100054: Plane001
+    100056: Plane003
+    100058: //RootNode
+    400000: obbj_rune_table
+    400002: obbj_rune_table_button
+    400004: obbj_rune_table_trap
+    400006: obj_base_ceiling001
+    400008: obj_base_door001
+    400010: obj_base_floor001
+    400012: obj_base_walls
+    400014: obj_chandelier
+    400016: obj_fireplace
+    400018: obj_fireplace_logs
+    400020: obj_fireplace_trap_door
+    400022: obj_switch_arm
+    400024: obj_switch_base
+    400026: obj_table
+    400028: obj_wall_light
+    400030: obj_wall_light001
+    400032: obj_wall_light002
+    400034: obj_wall_light003
+    400036: obj_wall_light_glow
+    400038: obj_wall_light_glow001
+    400040: obj_wall_light_glow002
+    400042: obj_wall_light_glow003
+    400044: obj_wall_light_outside
+    400046: obj_wall_light_outside001
+    400048: obj_wall_light_outside002
+    400050: obj_wall_light_outside003
+    400052: Object002
+    400054: Plane001
+    400056: Plane003
+    400058: //RootNode
+    2100000: 'Material #198'
+    2100002: 'Material #206'
+    2100004: 'Material #184'
+    2100006: m_gray
+    2100008: m_noir
+    2100010: m_white
+    2100012: 'Material #207'
+    2100014: 'Material #406'
+    2100016: 'Material #208'
+    2100018: 'Material #185'
+    2100020: blackmaterial
+    2100022: candle
+    2300000: obbj_rune_table
+    2300002: obbj_rune_table_button
+    2300004: obbj_rune_table_trap
+    2300006: obj_base_ceiling001
+    2300008: obj_base_door001
+    2300010: obj_base_floor001
+    2300012: obj_base_walls
+    2300014: obj_chandelier
+    2300016: obj_fireplace
+    2300018: obj_fireplace_logs
+    2300020: obj_fireplace_trap_door
+    2300022: obj_switch_arm
+    2300024: obj_switch_base
+    2300026: obj_table
+    2300028: obj_wall_light_glow
+    2300030: obj_wall_light_glow001
+    2300032: obj_wall_light_glow002
+    2300034: obj_wall_light_glow003
+    2300036: obj_wall_light_outside
+    2300038: obj_wall_light_outside001
+    2300040: obj_wall_light_outside002
+    2300042: obj_wall_light_outside003
+    2300044: Plane001
+    2300046: Plane003
+    3300000: obbj_rune_table
+    3300002: obbj_rune_table_button
+    3300004: obbj_rune_table_trap
+    3300006: obj_base_ceiling001
+    3300008: obj_base_door001
+    3300010: obj_base_floor001
+    3300012: obj_base_walls
+    3300014: obj_chandelier
+    3300016: obj_fireplace
+    3300018: obj_fireplace_logs
+    3300020: obj_fireplace_trap_door
+    3300022: obj_switch_arm
+    3300024: obj_switch_base
+    3300026: obj_table
+    3300028: obj_wall_light_glow
+    3300030: obj_wall_light_glow001
+    3300032: obj_wall_light_glow002
+    3300034: obj_wall_light_glow003
+    3300036: obj_wall_light_outside
+    3300038: obj_wall_light_outside001
+    3300040: obj_wall_light_outside002
+    3300042: obj_wall_light_outside003
+    3300044: Plane001
+    3300046: Plane003
+    4300000: obj_wall_light_outside
+    4300002: obj_wall_light_glow
+    4300004: obj_base_walls
+    4300006: obj_switch_base
+    4300008: obj_switch_arm
+    4300010: obj_base_ceiling001
+    4300012: obj_base_floor001
+    4300014: obj_base_door001
+    4300016: obj_wall_light_outside001
+    4300018: obj_wall_light_glow001
+    4300020: obj_wall_light_outside002
+    4300022: obj_wall_light_glow002
+    4300024: obj_wall_light_outside003
+    4300026: obj_wall_light_glow003
+    4300028: obj_table
+    4300030: Plane003
+    4300032: obbj_rune_table
+    4300034: obbj_rune_table_button
+    4300036: obbj_rune_table_trap
+    4300038: Plane001
+    4300040: obj_fireplace
+    4300042: obj_fireplace_trap_door
+    4300044: obj_fireplace_logs
+    4300046: obj_chandelier
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

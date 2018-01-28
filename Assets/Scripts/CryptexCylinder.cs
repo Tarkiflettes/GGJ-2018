@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class CryptexCylinder : MonoBehaviour {
 
-	
+    public int CylinderPosition;
+    public int Step = 0;
+    public int Size = 26;
+    public Vector3 Axis;
 
     [ContextMenu("Rotate")]
-    void NextStep()
+    void NextStepD()
     {
-        transform.Rotate(Vector3.forward, 360f / 26f);
+        Step--;
+        transform.Rotate(Axis, 360f / Size);
+    }
+
+    void NextStepG()
+    {
+        Step++;
+        transform.Rotate(Axis*-1, 360f / Size);
     }
 
     private void OnDrawGizmos()
