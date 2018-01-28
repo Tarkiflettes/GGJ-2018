@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class Switch : Trigger
 {
-    //private bool _busy = false;
-
     public Rotator Rotator;
     public Vector3 Axis;
     public int Angle = 70;
