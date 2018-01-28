@@ -29,7 +29,7 @@ public class Rotator : MonoBehaviour {
         {
             foreach (Transform child in GetComponentsInChildren<Transform>())
             {
-                if(child.tag == "Rotator")
+                if(child.tag.Contains("Rotator"))
                     child.Rotate(_axis, _sens*Step);
             }
             yield return new WaitForSeconds(0.01f);
