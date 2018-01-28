@@ -6,8 +6,8 @@ using UnityEngine;
 public class CheckMatrice : Trigger {
 
     private SwitchRoom2[] _switchButtons;
-    private bool[] _correctMatrice = new bool[]{ true, false, false, false, false, true, false, true, false };
-    private bool[] _currentMatrice = new bool[]{ false, false, false, false, false, false, false, false, false };
+    private bool[] _correctMatrice = new bool[]{ false, true, false, false, true, false, false, false, false, false, false, true, false, false, true, false };
+    private bool[] _currentMatrice = new bool[]{ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
     bool closed = true;
 
     protected override void Action()
