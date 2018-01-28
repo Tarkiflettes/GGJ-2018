@@ -12,6 +12,10 @@ public class AlphabetLock : Trigger {
     // Use this for initialization
     void Start () {
         _cryptexCylinder = GetComponentsInChildren<CryptexCylinder>();
+        foreach (var j in _cryptexCylinder)
+        {
+            j.Size = Alphabet.Length;
+        }
         locked = true;
 	}
 	
