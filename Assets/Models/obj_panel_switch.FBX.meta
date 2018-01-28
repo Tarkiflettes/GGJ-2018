@@ -16,6 +16,13 @@ ModelImporter:
     100016: obj_panel_puzzle_switch_08
     100018: obj_panel_puzzle_switch_09
     100020: //RootNode
+    100022: obj_panel_puzzle_switch_010
+    100024: obj_panel_puzzle_switch_011
+    100026: obj_panel_puzzle_switch_012
+    100028: obj_panel_puzzle_switch_013
+    100030: obj_panel_puzzle_switch_014
+    100032: obj_panel_puzzle_switch_015
+    100034: obj_panel_puzzle_switch_016
     400000: obj_panel_puzzle_door
     400002: obj_panel_puzzle_switch_01
     400004: obj_panel_puzzle_switch_02
@@ -27,6 +34,13 @@ ModelImporter:
     400016: obj_panel_puzzle_switch_08
     400018: obj_panel_puzzle_switch_09
     400020: //RootNode
+    400022: obj_panel_puzzle_switch_010
+    400024: obj_panel_puzzle_switch_011
+    400026: obj_panel_puzzle_switch_012
+    400028: obj_panel_puzzle_switch_013
+    400030: obj_panel_puzzle_switch_014
+    400032: obj_panel_puzzle_switch_015
+    400034: obj_panel_puzzle_switch_016
     2100000: m_noir
     2100002: m_white
     2300000: obj_panel_puzzle_door
@@ -40,6 +54,13 @@ ModelImporter:
     2300016: obj_panel_puzzle_switch_08
     2300018: obj_panel_puzzle_switch_09
     2300020: //RootNode
+    2300022: obj_panel_puzzle_switch_010
+    2300024: obj_panel_puzzle_switch_011
+    2300026: obj_panel_puzzle_switch_012
+    2300028: obj_panel_puzzle_switch_013
+    2300030: obj_panel_puzzle_switch_014
+    2300032: obj_panel_puzzle_switch_015
+    2300034: obj_panel_puzzle_switch_016
     3300000: obj_panel_puzzle_door
     3300002: obj_panel_puzzle_switch_01
     3300004: obj_panel_puzzle_switch_02
@@ -51,6 +72,13 @@ ModelImporter:
     3300016: obj_panel_puzzle_switch_08
     3300018: obj_panel_puzzle_switch_09
     3300020: //RootNode
+    3300022: obj_panel_puzzle_switch_010
+    3300024: obj_panel_puzzle_switch_011
+    3300026: obj_panel_puzzle_switch_012
+    3300028: obj_panel_puzzle_switch_013
+    3300030: obj_panel_puzzle_switch_014
+    3300032: obj_panel_puzzle_switch_015
+    3300034: obj_panel_puzzle_switch_016
     4300000: obj_panel_puzzle_base
     4300002: obj_panel_puzzle_switch_01
     4300004: obj_panel_puzzle_switch_09
@@ -62,6 +90,13 @@ ModelImporter:
     4300016: obj_panel_puzzle_switch_05
     4300018: obj_panel_puzzle_switch_08
     4300020: obj_panel_puzzle_door
+    4300022: obj_panel_puzzle_switch_011
+    4300024: obj_panel_puzzle_switch_010
+    4300026: obj_panel_puzzle_switch_012
+    4300028: obj_panel_puzzle_switch_014
+    4300030: obj_panel_puzzle_switch_015
+    4300032: obj_panel_puzzle_switch_016
+    4300034: obj_panel_puzzle_switch_013
   externalObjects: {}
   materials:
     importMaterials: 1
