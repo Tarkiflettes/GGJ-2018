@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: d934162b1d2ec85488d159e89ce9d83e
-timeCreated: 1517102212
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -24,6 +22,7 @@ ModelImporter:
     4300000: obj_chest_top
     4300002: obj_chest_strap
     4300004: obj_chest_bottom
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -98,7 +97,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
