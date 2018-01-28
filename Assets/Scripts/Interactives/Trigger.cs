@@ -32,7 +32,7 @@ public abstract class Trigger : RayReceiver
     {
         Debug.Log("OnRaySelect");
         if (!CanTrigger())
-            return;
+            return; 
         OpenTrigger();
         Triggering();
         Action();
