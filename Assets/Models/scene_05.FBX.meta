@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: d873534ae48fd1b468015710adf401f5
+timeCreated: 1517115674
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: dresser
+    100002: obj_base_ceiling002
+    100004: obj_base_door002
+    100006: obj_base_floor002
+    100008: obj_base_walls001
+    100010: obj_desk_file_cabinet_drawer_1_of_007
+    100012: obj_dresser
+    100014: obj_dresser_big_drawer_002
+    100016: obj_dresser_big_drawer_003
+    100018: obj_dresser_big_drawer_004
+    100020: obj_dresser_big_drawer_01
+    100022: obj_dresser_small_drawer_1
+    100024: obj_dresser_small_drawer_2
+    100026: obj_dresser_small_drawer_3
+    100028: obj_dresser_small_drawer_4
+    100030: obj_rug
+    100032: obj_rug_edge
+    100034: obj_synthesizer
+    100036: obj_synthesizer_key_a
+    100038: obj_synthesizer_key_b
+    100040: obj_synthesizer_key_black_1
+    100042: obj_synthesizer_key_black_2
+    100044: obj_synthesizer_key_black_3
+    100046: obj_synthesizer_key_black_4
+    100048: obj_synthesizer_key_black_5
+    100050: obj_synthesizer_key_c
+    100052: obj_synthesizer_key_d
+    100054: obj_synthesizer_key_e
+    100056: obj_synthesizer_key_f
+    100058: obj_synthesizer_key_g
+    100060: obj_table002
+    100062: obj_table_round002
+    100064: //RootNode
+    100066: Vase_2
+    400000: dresser
+    400002: obj_base_ceiling002
+    400004: obj_base_door002
+    400006: obj_base_floor002
+    400008: obj_base_walls001
+    400010: obj_desk_file_cabinet_drawer_1_of_007
+    400012: obj_dresser
+    400014: obj_dresser_big_drawer_002
+    400016: obj_dresser_big_drawer_003
+    400018: obj_dresser_big_drawer_004
+    400020: obj_dresser_big_drawer_01
+    400022: obj_dresser_small_drawer_1
+    400024: obj_dresser_small_drawer_2
+    400026: obj_dresser_small_drawer_3
+    400028: obj_dresser_small_drawer_4
+    400030: obj_rug
+    400032: obj_rug_edge
+    400034: obj_synthesizer
+    400036: obj_synthesizer_key_a
+    400038: obj_synthesizer_key_b
+    400040: obj_synthesizer_key_black_1
+    400042: obj_synthesizer_key_black_2
+    400044: obj_synthesizer_key_black_3
+    400046: obj_synthesizer_key_black_4
+    400048: obj_synthesizer_key_black_5
+    400050: obj_synthesizer_key_c
+    400052: obj_synthesizer_key_d
+    400054: obj_synthesizer_key_e
+    400056: obj_synthesizer_key_f
+    400058: obj_synthesizer_key_g
+    400060: obj_table002
+    400062: obj_table_round002
+    400064: //RootNode
+    400066: Vase_2
+    2100000: Material.008
+    2100002: m_noir
+    2100004: Material.003
+    2100006: m_gray
+    2100008: m_wood
+    2100010: m_white
+    2100012: 'Material #529'
+    2100014: 'Material #184'
+    2100016: 'Material #541'
+    2100018: 'Material #185'
+    2300000: obj_base_ceiling002
+    2300002: obj_base_door002
+    2300004: obj_base_floor002
+    2300006: obj_base_walls001
+    2300008: obj_desk_file_cabinet_drawer_1_of_007
+    2300010: obj_dresser
+    2300012: obj_dresser_big_drawer_002
+    2300014: obj_dresser_big_drawer_003
+    2300016: obj_dresser_big_drawer_004
+    2300018: obj_dresser_big_drawer_01
+    2300020: obj_dresser_small_drawer_1
+    2300022: obj_dresser_small_drawer_2
+    2300024: obj_dresser_small_drawer_3
+    2300026: obj_dresser_small_drawer_4
+    2300028: obj_rug
+    2300030: obj_rug_edge
+    2300032: obj_synthesizer
+    2300034: obj_synthesizer_key_a
+    2300036: obj_synthesizer_key_b
+    2300038: obj_synthesizer_key_black_1
+    2300040: obj_synthesizer_key_black_2
+    2300042: obj_synthesizer_key_black_3
+    2300044: obj_synthesizer_key_black_4
+    2300046: obj_synthesizer_key_black_5
+    2300048: obj_synthesizer_key_c
+    2300050: obj_synthesizer_key_d
+    2300052: obj_synthesizer_key_e
+    2300054: obj_synthesizer_key_f
+    2300056: obj_synthesizer_key_g
+    2300058: obj_table002
+    2300060: obj_table_round002
+    2300062: Vase_2
+    3300000: obj_base_ceiling002
+    3300002: obj_base_door002
+    3300004: obj_base_floor002
+    3300006: obj_base_walls001
+    3300008: obj_desk_file_cabinet_drawer_1_of_007
+    3300010: obj_dresser
+    3300012: obj_dresser_big_drawer_002
+    3300014: obj_dresser_big_drawer_003
+    3300016: obj_dresser_big_drawer_004
+    3300018: obj_dresser_big_drawer_01
+    3300020: obj_dresser_small_drawer_1
+    3300022: obj_dresser_small_drawer_2
+    3300024: obj_dresser_small_drawer_3
+    3300026: obj_dresser_small_drawer_4
+    3300028: obj_rug
+    3300030: obj_rug_edge
+    3300032: obj_synthesizer
+    3300034: obj_synthesizer_key_a
+    3300036: obj_synthesizer_key_b
+    3300038: obj_synthesizer_key_black_1
+    3300040: obj_synthesizer_key_black_2
+    3300042: obj_synthesizer_key_black_3
+    3300044: obj_synthesizer_key_black_4
+    3300046: obj_synthesizer_key_black_5
+    3300048: obj_synthesizer_key_c
+    3300050: obj_synthesizer_key_d
+    3300052: obj_synthesizer_key_e
+    3300054: obj_synthesizer_key_f
+    3300056: obj_synthesizer_key_g
+    3300058: obj_table002
+    3300060: obj_table_round002
+    3300062: Vase_2
+    4300000: obj_dresser_big_drawer_01
+    4300002: obj_dresser_small_drawer_3
+    4300004: obj_dresser
+    4300006: obj_dresser_small_drawer_4
+    4300008: obj_dresser_big_drawer_003
+    4300010: obj_dresser_big_drawer_004
+    4300012: obj_dresser_small_drawer_1
+    4300014: obj_dresser_small_drawer_2
+    4300016: obj_dresser_big_drawer_002
+    4300018: obj_base_walls001
+    4300020: obj_base_ceiling002
+    4300022: obj_base_floor002
+    4300024: obj_base_door002
+    4300026: obj_rug
+    4300028: obj_rug_edge
+    4300030: obj_table002
+    4300032: obj_synthesizer
+    4300034: obj_synthesizer_key_black_2
+    4300036: obj_synthesizer_key_black_3
+    4300038: obj_synthesizer_key_a
+    4300040: obj_synthesizer_key_black_1
+    4300042: obj_synthesizer_key_d
+    4300044: obj_synthesizer_key_g
+    4300046: obj_synthesizer_key_f
+    4300048: obj_synthesizer_key_c
+    4300050: obj_synthesizer_key_e
+    4300052: obj_synthesizer_key_b
+    4300054: obj_synthesizer_key_black_4
+    4300056: obj_synthesizer_key_black_5
+    4300058: obj_desk_file_cabinet_drawer_1_of_007
+    4300060: obj_table_round002
+    4300062: Vase_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,33 +3,22 @@ using UnityEngine;
 
 public class Switch : Trigger
 {
-    private bool _busy = false;
+    public Rotator Rotator;
+    public Vector3 Axis;
+    public int Angle = 70;
 
-    private IEnumerator ContinuousRotation(Vector3 vector)
-    {
-        for (var i = 0; i < 45; i++)
-        {
-            transform.Rotate(vector, 1);
-            yield return new WaitForSeconds(0.01f);
-        }
-        _busy = false;
-    }
+    private bool turnedOn;
 
     protected override void Action()
     {
-        var vector = Vector3.forward;
-
-        if (transform.rotation == Quaternion.Euler(0, 0, 45))
+        if(!turnedOn)
         {
-            vector = Vector3.back;
+            Rotator.Open(Axis, Angle);
         }
-
-        if (!_busy)
+        else
         {
-            _busy = true;
-            var continuousRotation = ContinuousRotation(vector);
-            StartCoroutine(continuousRotation);
+            Rotator.Close();
         }
+        turnedOn = !turnedOn;
     }
-
 }

@@ -33,8 +33,20 @@ public class RayCaster : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.F))
             {
-                currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
-                OnSelect(currentCollider);
+                if(currentCollider.tag != "NoReaction")
+                {
+                    if (currentCollider.tag.Contains("GoToParent"))
+                    {
+                        Debug.Log("ParentGoing");
+                        currentCollider.transform.parent.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+                        OnSelect(currentCollider.transform.parent.gameObject);
+                    }
+                    else
+                    {
+                        currentCollider.SendMessage("OnRaySelect", SendMessageOptions.DontRequireReceiver);
+                        OnSelect(currentCollider.gameObject);
+                    }
+                }
             }
         }
         else
@@ -47,17 +59,24 @@ public class RayCaster : MonoBehaviour
         }
     }
 
-    protected virtual void OnSelect(Collider collider)
+    protected virtual void OnSelect(GameObject gameObject)
     {
-        if (collider.gameObject.GetComponent<Movable>())
+
+        Debug.Log(gameObject);
+        if (gameObject.GetComponent<Movable>())
         {
-            Player.GrabObject(collider.gameObject);
+            Player.GrabObject(gameObject);
         }
-        if (collider.gameObject.GetComponent<Pickable>())
+        if (gameObject.GetComponent<Pickable>())
         {
-            Debug.Log(collider.gameObject);
-            Player.PickObject(collider.gameObject);
+            Debug.Log(gameObject);
+            Player.PickObject(gameObject);
         }
+        if (gameObject.GetComponent<LockScreenAction>())
+        {
+            Player.LockScreen(gameObject.GetComponent<LockScreenAction>());
+        }
+
     }
 
     private void OnDrawGizmos()
