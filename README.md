@@ -24,7 +24,6 @@ Get the [latest version](https://github.com/Tarkiflettes/GGJ-2018/releases) from
 
 ## Screenshot
 
-![GGJ-2018](https://i.imgur.com/apCeg16.png)
 ![GGJ-2018](https://i.imgur.com/iuCO6Ig.png)
 ![GGJ-2018](https://i.imgur.com/FFP5Vjn.png)
 ![GGJ-2018](https://i.imgur.com/rIj4a87.png)
